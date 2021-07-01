@@ -162,6 +162,99 @@ Am folosit inegalitatea tringhiului și \(\left | -a \right |= \left | a \right 
 
 Dar \(x_{n}, x_{k}\) sunt numere naturale, și deci diferența lor este un număr întreg adică \(x_{n}- x_{k}\in \mathbb{Z}\). Cum \(\left |x_{n}- x_{k} \right |\geq 0\) iar din (5) \(\left |x_{n}- x_{k} \right |< 1\) rezultă că \(\left |x_{n}- x_{k} \right |\in \left [ 0,1 \right ]\) deci \(\left |x_{n}- x_{k} \right |\in\mathbb{Z}\cap \left [ 0,1 \right)= \left \{ ....,-n ,....,-2,-1,0,1,2,3,....,n,... \right \}\cap \left [ 0,1 \right )= \left \{ 0 \right \}\) de unde \(\left | x_{n}-x_{k} \right |=0\) adică \(x_{n}-x_{k}=0,x_{n}=x_{k}.\) Așasar am demonstrat: \(\forall n\geq k avem x_{n}=x_{k},\) ceea ce încheie demonstrația. 
 
+\section{Exerciții}
+
+\begin{enumerate}
+  \item Calculați \( =\lim_{n\to\infty }\left ( \frac{1}{\sqrt{n^{4}+1}}+ \frac{2}{\sqrt{n^{4}+2} } +\frac{3}{\sqrt{n^{4}+3}}+........+\frac{n}{\sqrt{n^{4}+n}}  \right ) \)
+\end{enumerate}
+
+\textbf{Rezolvare}
+
+Notăm \( x_{n}= \frac{1}{\sqrt{n^{4}+1}} + \frac{2}{\sqrt{n^{4}+2}}+\frac{3}{\sqrt{n^{4}+3}}+........+\frac{n}{\sqrt{n^{4}+n}} \).
+Adică \( x_{n}= \sum_{k=1}^{n}\frac{k}{n^{4}+k}\).
+
+În continuare procedăm astfel. De numărător nu ne atingem. Vom lucra cu numitorul, ideea fiind de a se avea același numitor peste tot. 
+
+Avem \(1\leq k\leq n\) de unde \(n^{4}+1 \leq n^{4}+k \leq n^{4}+n\) de unde \(\sqrt{n^{4}+1}\leq \sqrt{n^{4}+k}\leq \sqrt{n^{4}+1}\) de unde \(\frac{1}{\sqrt{n^{4}+1}}\geq \frac{1}{\sqrt{n^{4}+k}}\geq \frac{1}{\sqrt{n^{4}+n}}\).
+Acum înmulțind cu k obținem \(\frac{k}{\sqrt{n^{4}+1}}\geq \frac{k}{\sqrt{n^{4}+k}}\geq \frac{k}{\sqrt{n^{4}+n}}\). (1) 
+În continuare în relația (1) dam lui \(k\) valorile \(1,2,.....,n\). 
+Pentru \(k = 1\) rezultă:
+\begin{itemize}
+  \item \(\frac{1}{\sqrt{n^{4}+1}}\geq \frac{1}{\sqrt{n^{4}+k}}\geq \frac{1}{\sqrt{n^{4}+n}} \)
+\end{itemize}
+
+Pentru \(k = 2\) rezultă:
+\begin{itemize}
+  \item \(\frac{2}{\sqrt{n^{4}+1}}\geq \frac{2}{\sqrt{n^{4}+2}}\geq \frac{2}{\sqrt{n^{4}+n}} \)
+\end{itemize}
+
+Adunând inegalitățile de mai sus obținem 
+
+\( \frac{1}{\sqrt{n^{4}+1}}+ \frac{2}{\sqrt{n^{4}+1}}+......+ \frac{n}{\sqrt{n^{4}+1}} \geq \frac{1}{\sqrt{n^{4}+1}}+ \frac{2}{\sqrt{n^{4}+2}}+......+ \frac{n}{\sqrt{n^{4}+n}}\geq \frac{1}{\sqrt{n^{4}+n}}+ \frac{2}{\sqrt{n^{4}+n}}+......+ \frac{n}{\sqrt{n^{4}+n}}\)
+
+Sau
+
+\(\frac{1+2+....+n}{\sqrt{n^{4}+1}}\geq x_{n}\geq \frac{1+2+.....+n}{\sqrt{n^{4}+n}}\)
+
+Dar știm că \(1+2+...+n = \frac{n(n+1)}{2}\), deci vom obține \(\frac{n(n+1)}{2\sqrt{n^{4}+1}}\geq x_{n}\geq \frac{n(n+1)}{2\sqrt{n^{4}+n}}\). (2)
+
+Acum 
+\(\lim_{n \to \infty }\frac{n(n+1)}{2\sqrt{n^{4}+1}}=\frac{1}{2} și \lim_{n \to \infty }\frac{n(n+1)}{2\sqrt{n^{4}+n}}=\frac{1}{2}\). (3)
+
+Vom da la ambele factor comun forțat. Din (2) și (3) și teorema cleștelui rezultă că
+\begin{itemize}
+  \item \(\lim_{n \to \infty }x_{n}=\frac{1}{2}\)
+\end{itemize}
+
+\section{Șiruri mărginite}
+
+\textbf{Definiție}
+
+Fie \((x_{n})_{n\in \mathbb{N}}\) un șir de numere reale. Șirul \((x_{n})_{n\in \mathbb{N}}\) se numește mărginit dacă și numai dacă \(\exists  a, b \in \mathbb{R}, a< b\) astfel încât \(\forall n\in \mathbb{N}\) este satisfacută inegalitatea \(x_{n}\in \left [ a,b \right ]\), sau echivalent \(\exists M> 0\) astefle încât \(\forall  n\in \mathbb{N}\) este satisfacută inegalitatea \(\left | x_{n} \right |\leq M\).
+
+\textbf{Definiție }
+
+Fie \((x_{n})_{n\in \mathbb{N}}\) un șir de numere reale. Spunem că \(\lim_{n \to \infty }x_{n}=\infty\) dacă, \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astfel încât pentru \(\forall n\geq n_{\varepsilon }\) este satisfacută inegalitatea \(x_{n}> \varepsilon\). 
+Sau \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astfel încât \(x_{n}> \varepsilon ,\forall n\geq n_{\varepsilon }\). 
+
+\textbf{Propoziție}
+ 
+Fie \((x_{n})_{n\in \mathbb{N}}\) un șir de numere reale. Dacă \(\lim_{n \to \infty }x_{n}=\infty\) atunci\( \lim_{n \to \infty }\frac{1}{x_{n}}=0.\) 
+
+\textbf{Demonstrație} 
+
+Fie \(\varepsilon > 0\). Deoarece \(\lim_{n \to \infty }x_{n}=\infty\) din definiție aplicată pentru \(\frac{1}{\varepsilon }> 0\) rezultă că \(\exists n_{\varepsilon }\in \mathbb{N}\) astfel încât pentru \(\forall n\geq n_{\varepsilon }\) este satisfacută inegalitatea \(x_{n}> \frac{1}{\varepsilon }\). 
+
+Din această inegalitate rezultă că \(\forall n\geq n_{\varepsilon }\) este satisfacută inegalitatea \(x_{n}> 0\), prin urmare are sens fracția \(\frac{1}{x_{n}}, \forall n\geq n_{\varepsilon }\). Dar inegalitatea de mai sus este echivalentă cu \(\exists n_{\varepsilon }\in \mathbb{N}\) astfel încât \(\forall n\geq n_{\varepsilon }\) este satisfacută inegalitatea\( \frac{1}{x_{n}}< \varepsilon.\) Conform definiției aceasta înseamnă că \(\lim_{n \to \infty }\frac{1}{x_{n}}=0\).
+
+
+\textbf{Lema Stolz-Cesaro (Cazul \(\frac{1}{\infty }\))}
+
+Fie \(\left ( x_{n} \right )_{n\in \mathbb{N}}\subset \mathbb{R}\) și \(\left (\alpha _{n} \right )_{n\in \mathbb{N}}\subset \left ( 0,\infty \right )\) astfel încât \(\alpha _{n} \uparrow \infty\). 
+Dacă \(\lim_{n \to \infty }\frac{x_{n} - x_{n-1}}{\alpha _{n}-a_{n-1}}\in \mathbb{R}\) atunci \(\lim_{n \to \infty }\frac{x_{n}}{ \alpha _{n}}\in \mathbb{R}\) și în plus \(\lim_{n \to \infty }\frac{x_{n}}{ \alpha _{n}}= \lim_{n \to \infty }\frac{x_{n} - x_{n-1}}{ \alpha _{n}- \alpha _{n-1}} \).
+
+\textbf{Demonstrație} 
+Fie \(\alpha = \lim_{n \to \infty }\frac{x_{n}-x_{n-1}}{\alpha _{n}-\alpha _{n-1}}\) . 
+Atunci \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astefl încât \(\left | \frac{x_{n}-x_{n-1}}{\alpha _{n}- \alpha _{n-1}} - \alpha \right |< \frac{\varepsilon }{2} \forall  n\geq n_{\varepsilon  }\)
+Sau , \(\alpha _{n} \uparrow, 
+\left | x_{n}- x_{n-1 }- \alpha \left ( \alpha _{n}-\alpha _{n-1} \right ) \right | < \frac{\varepsilon }{2}\left ( \alpha _{n}- \alpha _{n-1} \right ), \forall n\geq n_{\varepsilon }\). (1) 
+
+Notăm cu \(k=n_{\varepsilon }+1\). Pentru \(n\geq k \)luând în (1), \(n= k+1, k+2,....,n\) obținem:
+\(\left | x_{k+1} - x_{k} - \alpha \left ( a_{k+1}- a_{k} \right ) \right |< \frac{\varepsilon }{2}\left ( \alpha _{k+1} - \alpha _{k} \right )\). 
+
+\(\left | x_{k+2} - x_{k+1} - \alpha \left ( a_{k+2}- a_{k+1} \right ) \right |< \frac{\varepsilon }{2}\left ( \alpha _{k+2} - \alpha _{k+1} \right )
+...
+...
+...
+\left | x_{n} - x_{n-1} - \alpha \left ( a_{n}- a_{n-1} \right ) \right |< \frac{\varepsilon }{2}\left ( \alpha _{n} - \alpha _{n-1} \right )\)
+De unde obținem, prin adunare:
+
+
+
+
+
+
+
 
 
 

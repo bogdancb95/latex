@@ -542,12 +542,255 @@ De aici deducem că
   \lim_{n \to \infty }\sqrt[n]{x_{n}} = \lim_{n \to \infty } e^{\frac{\ln x_{n}}{n}} = e^{\lim_{n \to \infty } \frac{\ln x_{n}}{n}} = e^{\ln A} = A = \lim_{n \to \infty}\frac{x_{n+1}}{n}.
 \end{displaymath}
 
+\chapter{Șiruri recurente și asimtote oblice}
+
+\textbf{Teoremă}
+
+ Fie \(a\in \mathbb{R}\) și \(f: \left ( \alpha ,\infty  \right )n \to \mathbb{R}\) o funcție continuă cu proprietatea că \(f_{(x)}> x, \forall x > a\). Definim șirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condiția inițială \(x_{1}> \alpha\) și relația de recurență \(x_{n+1} = f_{\left ( x_{n} \right )}\) pentru orice  \(n\geq 1	\)
+Atunci 
+\begin{displaymath}
+  \lim_{x \to \infty }x_{n} = \infty
+\end{displaymath}
+
+Dacă există \(b_{0}\in \mathbb{R}\) astfel încât \(y = x + b_{0}\) este asimtotă oblică la graficul funcției f, atunci
+\begin{displaymath}
+  \lim_{x \to \infty }\frac{x_{n}}{n}=b_{0}
+\end{displaymath}
+
+Dacă există \(b_{0}, b_{1}\in \mathbb{R}, b_{0 }\neq 0\) astfel încât 
+\(\lim_{n \to \infty }x\left ( f\left ( x \right )-x-b_{0} \right )= b_{1},
+\lim_{n \to \infty } \frac{n}{\ln n}\left ( \frac{x_{n}}{n} -b_{0}\right )=\frac{b_{1}}{b_{0}}\)
+
+\textbf{Demonstrație}
+
+Din condiția inițială avem \(x_{1}> \alpha\). Presupunem \(x_{n}> \alpha\).
+Din ipoteza \(f_{\left ( x \right )}> x, \forall  x> \alpha\) rezultă că \(f_{\left ( x _{n}\right )}> x_{n}\), adică \(x_{n+1}> x_{n}\). Cum Presupunem \(x_{n}> \alpha\) rezultă că \(x_{n+1}> \alpha\). Conform inducției matematice rezultă că \(x_{n}> \alpha,  \forall n\geq 1\). 
+
+Fie \(n\geq 1\). Din ipoteza \(f_{\left ( x \right )}> x, \forall x> \alpha\) și \(x_{n}> \alpha\) rezultă că \(f_{\left ( x_{n} \right )}> x_{n}\) sau \(x_{n+1}> x_{n}\). Așadar șirul este strict crescător. Dacă prin absurd ar fi majorat, atunci din  teorema lui Weierstrass este convergent și fie \(\lim_{n \to \infty }x_{n} = L\in \mathbb{R}\). Cum șirul este crescătpr avem \(x_{n}\geq x_{1}, \forall n\geq 1\) de unde, trecând la limită rezultă ca \(L \geq 1\). Cum \(x_{1}\geq \alpha\) rezultă că \(L\geq \alpha\), iar din ipoteza \(f_{\left ( x \right )}\geq x, \forall x\geq \alpha\) rezultă, in particular, \(f_{\left ( L \right )}> L\). Deoarece \(\lim_{n \to \infty }x_{n}= L\), iar f este contnuă, rezultă că \(\lim_{n \to \infty }f_{\left ( x_{n} \right )} = f_{\left ( L \right )}\) sau \(\lim_{n \to \infty }x_{n+1} = f_{\left ( L \right )}\), adică \(\lim_{n \to \infty }x_{n} = f_{\left ( L \right )}\). Cum \(\lim_{n \to \infty }x_{n} = f_{\left ( L \right )}\), din unicitatea limitei unui șir de numere reale rezultă că \(f_{\left ( L \right )} = L\), ceea ce este fals. Așsadar șirul \(\left ( x_{n} \right )_{n\geq 1}\) nu este majorat și fiind crescător, după cum am demonstrat, \(\lim_{n \to \infty }x_{n}=\infty\). 
+Deoarece \(y= x + b_{0}\) este asimtotă oblică la graficul funcției f, conform definiției \(\lim_{x \to \infty }\left ( f_{\left ( x \right )}-x \right )= b_{0}\). Cum, din 1. , \(\lim_{x \to \infty }x_{n} = \infty\), din caracterizarea limitei unei funcții într-un punct cu șiruri rezultă că \(\lim_{x \to \infty }\left ( f_{\left ( x_{n} \right )} -x_{n}\right )= b_{0}\) sau ținând cont de relația de recurență \(\lim_{x \to \infty }\left ( x_{n+1} -x_{n}\right )=b_{0}\). Din lema Stolz-Cesaro, cazul \(\left [ \frac{1}{\infty } \right ],\) rezultă că \(\lim_{n \to \infty }\frac{x_{n}}{n}= \lim_{n \to \infty}\left ( x_{n+1} -x_{n}\right ) = b_{0}\).
+
+Pentru orice \(n\geq 1\) notăm \(y_{n}= x_{n}-b_{n}n\) Avem 
+\begin{displaymath}
+  y_{n+1}-y_{n}= x_{1}-x_{n}-b_{0} = f_{\left ( x_{n} \right )}-x_{n}-b_{0},\forall n\geq 1.
+\end{displaymath}
+
+Cum \(\lim_{x \to \infty }x\left ( f_{\left ( x \right )} -x-b_{0}\right )=b_{1}\) iar din 1. \(\lim_{x \to \infty }x_{n}=\infty\), din caracterizarea limitei unei funcții într-un punct cu șiruri rezultă că \(\lim_{x \to \infty }x_{n}\left ( y_{n+1} -y_{n}\right )=b_{1}\).
+
+Din egalitatea \(f_{\left ( x \right )}-x-b_{0}= x\left ( f_{\left ( x \right )}-x-b_{0} \right )\cdot \frac{1}{x}, \forall x>\alpha,x  \neq 0\) trecând la limită obținem 
+\begin{displaymath}
+  f_{\left ( x \right )}-x-b_{0}= \lim_{x \to \infty }x\left ( f_{\left ( x \right )}-x-b_{0} \right )\cdot \lim_{x \to \infty }\frac{1}{x} = b_{1}\cdot 0 = 0.
+\end{displaymath}
+
+Adică \(y=x+b_{0}\) este asimtotă oblică la graficul funcției f . Din 2. Rezultă că \(\lim_{n \to \infty }\frac{x_{n}}{n} = b_{0}\), de unde ținând cont că \(b_{0}\neq 0\) rezultă că \(\lim_{n \to \infty }\frac{n}{x_{n}} = \frac{1}{b_{0}}\). 
+
+
+Din egalitatea
+ \begin{displaymath}
+  \frac{y_{n+1} - y_{n}}{\frac{1}{n}} = x_{n}\left ( y_{n+1} -y_{n}\right )\cdot \frac{n}{x_{n}}, \geq 1
+\end{displaymath}
+
+Trecând la lmită obținem 
+\begin{displaymath}
+  \lim_{n \to \infty }\frac{y_{n+1} - y_{n}}{\frac{1}{n}} = \frac{b_{1}}{b_{0}}
+\end{displaymath}
+.
+
+Iarăși din lema Stolz-Cesaro obținem 
+\begin{displaymath}
+  \lim_{n \to \infty }\frac{y_{n}}{1+\frac{1}{2}+...+\frac{1}{n-1}} = \frac{b_{1}}{b_{0}} . Cum \lim_{n \to \infty }\frac{{1+\frac{1}{2}+...+\frac{1}{n-1}}}{\ln n} = 1, rezultă că \lim_{n \to \infty }\frac{y_{n}}{\ln n } = \frac{b_{1}}{b_{0}}, sau \lim_{n \to \infty }\frac{x_{n}-b_{0}n}{\ln n }  = \frac{b_{1}}{b_{0}}.
+\end{displaymath}
 
 
 
 
+\textbf{Nou}
 
 
+
+O primă aplicație a tepremei o constituie:
+
+\textbf{Teorema 2}
+
+Fie \(\varphi : \left [ 0,\infty  \right ) \to \mathbb{R}\) o funcție continuă cu proprietatea că \(\varphi_{\left ( x \right )}> 0, \forall x> 0\). Definim șirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condiția inițială \(x_{1}> 0\) și relația de recurență \(x_{n+1} = x_{n} + \varphi \left ( \frac{1}{x_{n}} \right )\) pentru \(\forall  n\geq 1\). 
+
+Atunci :
+\(\lim_{x \to \infty } x_{n} = \infty\) și \(\lim_{x \to \infty }\frac{x_{n}}{n} = \varphi\left ( 0 \right )\) iar dacă în plus , \(\varphi\left ( 0 \right )> 0\) și  \(\varphi\) este derivabilă în 0, 
+\begin{displaymath}
+  \lim_{n \to \infty }\frac{n}{\ln n }\left ( \frac{x_{n}}{n} -\varphi \left ( 0 \right )\right ) = \frac{{\varphi }'\left ( 0 \right )}{\varphi \left ( 0 \right )}.
+\end{displaymath}
+ 
+
+\textbf{Demonstrație}
+
+Fie \(f : \left ( 0,\infty  \right ) \to \mathbb{R}, f_{\left ( x \right )} = x+ \varphi \left ( \frac{1}{x} \right )\). Evident f este continuă și deoarece \(\varphi \left ( x \right )> 0\) rezultă că \(f_{\left ( x \right )}> x, \forall x> 0 \). Deoarece \(\varphi\) este continuă în 0, \(\lim_{x \to \infty }\left ( f_{\left ( x \right ) }-x\right ) = \lim_{x \to \infty }\varphi \left ( \frac{1}{x} \right )  = \lim_{t \to 0, t> 0 }\varphi \left ( t \right ) = \varphi \left ( 0 \right )\). 
+Așadar \(y= x+\varphi \left ( 0 \right )\) este asimtotă oblică la graficul funcției f. Din prima teoremă 1 și 2 rezultă că \(\lim_{n \to \infty }x_{n} = \infty\) și \(\lim_{n \to \infty }\frac{x_{n}}{n} = \varphi \left ( 0 \right )\). Deoarece \(\varphi\) este derivabilă în 0, \(\lim_{x \to \infty } x\left ( f_{\left ( x \right )}-x- \varphi \left ( 0 \right ) \right ) = \lim_{x \to \infty } x\left ( \varphi \left ( \frac{1}{x} \right ) -\varphi \left ( 0 \right )\right ) = \lim_{t \to 0, t> 0 } \frac{\varphi \left ( t \right )-\varphi \left ( 0 \right )}{t} = {\varphi }'\left ( 0 \right )\). Cum \(\varphi \left ( 0 \right )> 0\), din prima teoremă , 3. , rezultă că 
+\begin{displaymath}
+  \lim_{n \to \infty }\frac{n}{\ln n } \left ( \frac{x_{n}}{n }- \varphi \left ( 0 \right ) \right )= \frac{{\varphi}'\left ( 0 \right )}{\varphi \left ( 0 \right )}\)
+\end{displaymath}
+
+
+A doua aplicație a teoremei o constituie 
+
+\textbf{Teorema 3} 
+
+Fie \(\varphi : \left [ 0,\infty  \right ) \to \mathbb{R}\) o funcție continuă, derivabilă în 0 cu proprietatea că \(\varphi \left ( x \right )> 1, \forall x> 0, \varphi \left ( 0 \right ) = 1\). Definim șirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\), prin condiția inițială \(x_{1}> 0\) și relația de recurență \(x_{n+1}= x_{n }\varphi\left ( \frac{1}{x_{n}} \right )\) pentru orice n\geq 1. 
+Atunci:
+\(\lim_{x \to \infty }x_{n} = \infty și \lim_{n \to \infty }\frac{x_{n}}{n} = {\varphi }'\left ( 0 \right )\) iar dacă în plus  \({\varphi }'\left ( 0 \right )> 0 și \varphi\) este de două ori derivabilă în 0, \(\lim_{n \to \infty }\frac{n}{\ln n}\left ( \frac{x_{n}}{n}-{\varphi }' \left ( 0 \right )\right )= \frac{{\varphi }''\left ( 0 \right )}{2{\varphi }'\left ( 0 \right )}\). 
+
+\textbf{Demonstrație} 
+
+Fie \(f : \left ( 0,\infty  \right ) \to \mathbb{R}, f_{\left ( x \right )}= x\varphi \left ( \frac{1}{x} \right )\). Evident f este continuă și deoarece \(\varphi \left ( x \right )> 1,\forall x> 0\) rezultă că \(f_{\left ( x \right )}> x, \forall x> 0\). Deoarece \(\varphi\) este continuă în 0 și \(\varphi \left ( 0 \right )= 1\) rezultă că \(\lim_{x \to \infty }\frac{f_{\left ( x \right )}}{x} = \lim_{x \to \infty } \varphi \left ( \frac{1}{x} \right ) = \lim_{t \to 0, t> 0 }\varphi \left ( t \right ) = \varphi \left ( 0 \right ) = 1\). Deoarece \(\varphi\) este derivabilă în 0, 
+\begin{displaymath}
+  \lim_{x \to \infty }\left ( f_{\left ( x \right )} -x\right ) = \lim_{x \to \infty } x\left ( \varphi \left ( \frac{1}{x} \right ) -1\right )\lim_{t \to 0, t> 0}\frac{\varphi \left ( t \right ) - \varphi \left ( 0 \right )}{t} = 
+\end{displaymath}
+\begin{displaymath}
+  {\varphi }'\left ( 0 \right ). Așadar y = x +{\varphi }'\left ( 0 \right )
+\end{displaymath}
+
+ 
+este asimtotă oblică la graficul funcției f. Din teorema 1, 1 si 2, rezultă că \(\lim_{n \to \infty }x_{n} = \infty\) și \(\lim_{n \to \infty }\frac{x_{n}}{n} = {\varphi }'\left ( 0 \right )\). Deoarece \(\varphi\) este de două ori derivabilă în 0,
+\begin{displaymath}
+  \lim_{x \to \infty }x\left ( f_{\left ( x \right ) } -x-{\varphi }'\left ( 0 \right )\right ) = \lim_{x \to \infty }x\left ( x\varphi \left ( \frac{1}{x} \right ) - x - {\varphi }'\left ( 0 \right ) \right ) = \end{displaymath}
+\begin{displaymath}
+  \lim_{t \to 0, t> 0}\frac{\varphi \left ( t \right ) - \varphi \left ( 0 \right )- {\varphi }'\left ( 0 \right )t}{t^{2}} = \frac{{\varphi }''\left ( 0 \right )}{2}
+\end{displaymath}
+
+Din teorema 1, 3, rezultă că 
+\begin{displaymath}
+  \lim_{n \to \infty }\frac{n}{\ln n }\left ( \frac{x_{n}}{n}  - {\varphi }'\left ( 0 \right )\right ) = \frac{{\varphi }''\left ( 0 \right )}{2{\varphi }'\left ( 0 \right )}.
+\end{displaymath}
+ 
+
+\textbf{Corolar} 
+
+Fie \(\alpha \in \mathbb{R} \setminus \left \{ 0 \right \}\). Definim șirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condișia inițială \(x_{1}> 0\) și relația de recurență \(x_{n+1}= x_{n}+ e^{\frac{\alpha }{x_{n}}}\) pentru orice n\geq 1. 
+Atunci \(\lim_{x \to \infty }x_{n} = \infty , \lim_{n \to \infty }\frac{x_{n}}{n} = 1, \lim_{n \to \infty }\frac{n}{\ln n }\left ( \frac{x_{n}}{n} -1\right ) = \alpha\). 
+
+\textbf{Demonstrație} 
+
+Fie \(\varphi :\left [ 0,\infty  \right ) \to \left ( 0,\infty \right ), \varphi \left ( x \right ) = e^{\alpha x}\). Să observăm că \({\varphi }'\left ( x \right ) = \alpha e^{\alpha x}\). Aplicăm de două ori funcția \(\varphi\). 
+
+\textbf{Corolar} 
+
+Fie \(\alpha > 1,\beta > 0\). Definim șirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condiția \(x_{1} > 0\) și relația de recurență 
+\begin{displaymath}
+  x_{n+1} = x_{n} + \ln\left ( \alpha +\frac{\beta }{x_{n}} \right ), pentru \forall n\geq 1.
+\end{displaymath}
+
+
+Atunci 
+\begin{displaymath}
+  \lim_{x \to \infty }=\infty ,\lim_{n \to \infty }\frac{x_{n}}{n} = \ln \alpha , \lim_{n \to \infty }\frac{n}{\ln n}\left ( \frac{x_{n}}{n} - \ln \alpha \right ) = \frac{\beta }{\alpha \ln \alpha }.
+\end{displaymath}
+ 
+\textbf{Demonstrație} 
+
+Fie \(\varphi :\left [ 0,\infty  \right ) \to \left ( 0,\infty  \right ), \varphi \left ( x \right ) = \ln \left ( \alpha   + \beta x \right )\). Să observăm că \({\varphi }'\left ( x \right ) = \frac{\beta }{\alpha +\beta x}\). Aplicăm teorema 2 pentru funcția \(\varphi\).
+
+\textbf{Corolar} 
+
+Fie \(\alpha > 1,\beta > 0\). Definim șirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condiția inițială \(x_{1}> 0\) și relația de recurență
+\begin{displaymath}
+  x_{n+1} = x_{n} + \sqrt{\alpha +\frac{\beta }{x_{n}}}, pentru \forall n\geq 1.
+\end{displaymath}
+
+
+Atunci 
+\begin{displaymath}
+  \lim_{x \to \infty }x_{n} = \infty , \lim_{x \to \infty }\frac{x_{n}}{n} = \sqrt{\alpha }, \lim_{n \to \infty }\frac{n}{\ln n}\left ( \frac{x_{n}}{n} -\sqrt{\alpha }\right ) = \frac{\beta }{2\alpha }. 
+\end{displaymath}
+
+
+\textbf{Demonstrație}
+ 
+Fie \(\varphi :\left [ 0,\infty  \right ) \to \left ( 0,\infty  \right ), \varphi \left ( x \right ) = \sqrt{\alpha +\beta x}\). Să observăm că \({\varphi }'\left ( x \right ) = \frac{\beta }{2}\left ( \alpha +\beta x \right )^{-\frac{1}{2}}\). Aplicăm teorema 2 pentru funcția \(\varphi\). 
+
+\section{Exerciții}
+
+Calculați \begin{displaymath}
+  \lim_{n \to \infty }\frac{\sum_{k=1}^{n}k\left ( \sqrt[n]{n+k} -1\right )}{n\ln n } = \frac{1}{2}
+\end{displaymath}
+
+
+\textbf{Demonstrație} 
+
+Să notăm \(x_{n} = \frac{1}{n}\sum_{k=1}^{n} k \ln \left ( n+k \right ), n \geq 1\). 
+
+\begin{displaymath}
+  \sum_{k=1}^{n}k\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n}. (1)
+\end{displaymath}
+
+Fie \(n\geq 2\). Avem \(\ln \left ( n+1 \right )\leq \ln \left ( n+k \right )\leq \ln \left ( n+n \right ), \forall 1\leq k\leq n,\) de unde 
+\begin{displaymath}
+  \sum_{k=1}^{n} k \ln \left ( n+1 \right )\leq \sum_{k=1}^{n}k \ln \left ( n+k \right )\leq \sum_{k=1}^{n} k \ln \left ( n+n \right ), \frac{\ln \left ( n+1 \right )}{\ln n }
+\end{displaymath}
+
+\begin{displaymath}
+  \frac{\sum_{k=1}^{n}k}{n^{2}}\leq \frac{x_{n}}{n\ln n}\leq \frac{\ln \left ( n+n \right )}{\ln n }
+\end{displaymath}
+
+\(\frac{\sum_{k=1}^{n}k}{n^{2}}\), sau încă, 
+\(\frac{\ln \left ( n+1 \right )}{\ln n} \cdot \frac{n+1}{2n}\leq \frac{x_{n}}{n\ln n }\leq \frac{\ln \left ( n+n \right )}{\ln n }\cdot \frac{n+1}{2n} (2)\)
+
+Din (2) și teorema cleștelui rezultă că \(\lim_{n \to \infty }\frac{x_{n}}{n\ln n } = \frac{1}{2}\). Astfel spus \(x_{n\sim }\frac{n\ln n }{2} (3)\)
+Din (1) și (3) rezultă că \(\sum_{k=1}^{n}k\left ( \sqrt[n]{n+k}-1 \right )\sim \frac{n\ln n }{2}\), adică egalitatea din enunț. 
+
+
+Calculați 
+\begin{displaymath}
+  \lim_{n \to \infty }\frac{\sum_{k=1}^{n}\frac{1}{k\left ( \sqrt[n]{n+k}-1 \right )}}{\frac{\ln^{2}n}{n}} = 1
+\end{displaymath}
+
+\textbf{Demonstrație} 
+
+Să notăm \(x_{n}= \frac{1}{n}\sum_{k=1}^{n}\frac{\ln\left ( n+k \right )}{k}, n\geq 1\). 
+Știm că 
+\begin{displaymath}
+  \sum_{k=1}^{n}\frac{1}{k}\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n}. (1)
+\end{displaymath}
+
+Fie \(n\geq 2\). Avem \(\sum_{k=1}^{n}\frac{\ln\left ( n+1 \right )}{k}\leq \sum_{k=1}^{n}\frac{\ln\left ( n+k \right )}{k}\leq \sum_{k=1}^{n}\frac{\ln\left ( n+n \right )}{k}\), de unde 
+\\(frac{\ln \left ( n+1 \right )}{n}\sum_{k=1}^{n}\frac{1}{k}\leq x_{n}\leq \frac{\ln \left ( n+n \right )}{n}\sum_{k=1}^{n}\frac{1}{k}\), sau încă, 
+\begin{displaymath}
+  \frac{\ln \left ( n+1 \right )}{\ln n}\cdot \frac{\sum_{k=1}^{n}\frac{1}{k}}{\ln n}\leq \frac{x_{n}}{\frac{\ln^{2}n}{n}}\leq \frac{\ln \left ( n+n \right )}{\ln n}\cdot \frac{\sum_{k=1}^{n}\frac{1}{k}}{\ln n }. (2)
+\end{displaymath}
+
+Cum din lema Stolz- Cesaro, cazul \(\left [ \frac{1}{\infty } \right ], \lim_{n \to \infty }\frac{\sum_{k=1}^{n}\frac{1}{k}}{\ln n} = 1\), din (2) și teorema cleștelui deducem că \(\lim_{n \to \infty }\frac{x_{n}}{\frac{\ln ^{2}n}{n}} = 1\). 
+Altfel spus 
+\begin{displaymath}
+  x_{n}\sim \frac{\ln^{2}n}{n}. (3)
+\end{displaymath}
+
+
+Din (1) și (3) deducem că \(\sum_{k=1}^{n}\frac{1}{k}\left ( \sqrt[n]{n+k}-1 \right )\sim \frac{\ln^{2}n}{n}\), adică egalitatea din enunț. 
+
+Calculați 
+\begin{displaymath}
+  \lim_{n \to \infty }\frac{\sum_{k=2}^{n}\frac{1}{k \ln k}\left ( \sqrt[n]{n+k}-1 \right )}{\frac{\left ( \ln n \right )\left [ \ln \left ( \ln n  \right ) \right ]}{n}} = 1
+\end{displaymath}
+
+
+\textbf{Demonstrație}
+ 
+Notăm \(x_{n} = \frac{1}{n}\sum_{k=2}^{n}\frac{\ln \left ( n+k \right )}{k \ln k}, \geq 2.\)
+Știm că 
+\begin{displaymath}
+  \sum_{k=2}^{n}\frac{1}{k\ln k}\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n} . (1)
+\end{displaymath}
+
+Fie \(n\geq 2\). Avem \(\sum_{k=2}^{n}\frac{\ln \left ( n+1 \right )}{k\ln k}\leq \sum_{k=2}^{n}\frac{\ln \left ( n+k \right )}{k\ln k}\leq \sum_{k=2}^{n}\frac{\ln \left ( n+1 \right )}{k\ln k}\), de unde, 
+\(\frac{\ln \left ( n+1 \right )}{n}\left ( \sum_{k=2}^{n}\frac{1}{k\ln k } \right )\leq x_{n}\leq \frac{\ln \left ( n+n \right )}{n}\left ( \sum_{k=2}^{n}\frac{1}{k\ln k } \right )\), sau încă, 
+\begin{displaymath}
+  frac{\ln \left ( n+1 \right )}{n}\cdot \frac{\sum_{k=2}^{n}\frac{1}{k\ln k }}{\ln \left ( \ln n \right )}\leq \frac{x_{n}}{\frac{\left ( \ln n \right )\left [ \ln\left ( \ln n \right ) \right ]}{n}}\leq \frac{\ln \left ( n+n \right )}{n}\cdot \frac{\sum_{k=2}^{n}\frac{1}{k\ln k }}{\ln \left ( \ln n \right )}. (2)
+\end{displaymath}
+
+
+Din lema Stolz-Cesaro , cazul \(\left [ \frac{1}{\infty } \right ], lim_{n \to \infty }\frac{\sum_{k=1}^{n}\frac{1}{k\ln k}}{\ln\left ( \ln n \right ) } = 1,\) din (2) și teorema cleșteluui deducem că \(\lim_{n \to \infty }\frac{x_{n}}{\frac{\left ( \ln n  \right )\left [ \ln\left ( \ln n \right ) \right ]}{n}} = 1\). Altfel spus 
+\begin{displaymath}
+  x_{n}\sim \frac{\left ( \ln n \right )\left [ \ln\left ( \ln n \right ) \right ]}{n}. (3)
+\end{displaymath}
+
+Din (1) și (3) deducem că \(\sum_{k=2}^{n}\frac{1}{k}\left ( \sqrt[n]{n+k}-1 \right )\sim \frac{\left ( \ln n \right )\left [ \ln\left ( \ln n \right ) \right ]}{n}\), adică egalitatea din enunț. \cite{dumitru}
 
 
 \bibliographystyle{unsrt}

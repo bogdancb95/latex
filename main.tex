@@ -18,7 +18,7 @@
 \specializarea{Informatic\u a}
 \teza{licen\c t\u a}
 \titlu{\c Siruri}
-\coordonatorPrincipal{} %OBLIGATORIU
+\coordonatorPrincipal{}
 \autor{T\u anase Ramona Elena}
 \data{2021}
 
@@ -67,7 +67,7 @@ S\u a presupunem, prin absurd, c\u a \(x \neq  y\). Cum suntem pe \(\mathbb{R}\)
   \item \(\exists  n_{2} \in \mathbb{N}\) astfel \^ inc\^ at \(\left | x_{n} - y  \right | < \frac{y - x }{2} , \forall n \geq n_{2} \)
 \end{itemize}
 
-Fie \(n = max (n _{1}, n_{2}) \geq n_{1}, n_{2}.\) Atunci \(\left | x_{n} - x \right | < \frac{y-x}{2} \c si \left | x_{n} - y  \right | <  \frac{y-x}{2}\) de unde 
+Fie \(n = max (n _{1}, n_{2}) \geq n_{1}, n_{2}.\) Atunci \(\left | x_{n} - x \right | < \frac{y-x}{2}\) \c si \(\left | x_{n} - y  \right | <  \frac{y-x}{2}\) de unde 
 
 \begin{displaymath}
   y-x = \left | y-x \right | = \left | (y-x_{n})+ (x_{n} -x) \right |\leq \left | y-x_{n} \right | + \left | x_{n} - x \right | < \frac{y-x}{2} + \frac{y-x}{2} = y-x
@@ -96,14 +96,14 @@ Vom ar\u ata pentru \^ inceput urm\u atoarea inegalitate. Dac\u a \(a \leq x\leq
 Vom folosi propriet\u a\c tile de la modul. Avem:
 
 \begin{displaymath}
-  \left | x \right | = \left\{\begin{matrix} x, daca x \geq 0\\ -x, daca x< 0 \end{matrix}\right. \leq \left\{\begin{matrix} b\leq max(b,-b) = \left | b \right |\leq max(\left | a \right |,\left | b \right |) daca x\geq 0\\  -a\leq max(a,-a) = \left | a \right | \leq max (\left | a \right |,\left | b \right |) daca x< 0 \end{matrix}\right. \leq max (\left | a \right |, \left | b \right |)
+  \left | x \right | = \left\{\begin{matrix} x, daca x \geq 0\\ -x, daca x< 0 \end{matrix}\right. \leq \left\{\begin{matrix} b\leq max(b,-b) = \left | b \right |\leq max(\left | a \right |,\left | b \right |) daca x\geq 0\\  -a\leq max(a,-a) = \left | a \right | 
+  \leq max (\left | a \right |,\left | b \right |) daca x< 0 \end{matrix}\right. \leq max (\left | a \right |, \left | b \right |)
 \end{displaymath}
  
 
 Din \(x_{n} \leq y_{n}\leq z_{n}\), \(\forall n\in \mathbb{N} \) rezult\u a c\u a \(x_{n}-x \leq y_{n}-x \leq z_{n}-x, \forall n\in \mathbb{N}. \)
 De aici folosind inegalitatea demonstrat\u a deducem c\u a:
 
-%TODO
 \[\left | y_{n} - x \right |\leq max (\left | x_{n}-x \right |, \left | z_{n} - x \right |),\forall n\in \mathbb{N} (1)\]
 
 
@@ -156,7 +156,6 @@ Deoarece \(\lim_{n \to \infty }x_{n}= x\) pentru \(\varepsilon = \frac{1}{2}> 0,
 	
 S\u a not\u am \(k=n_{\frac{1}{2}}\in \mathbb{N}\) \c si s\u a re\c tinem c\u a \c stim c\u a \(\forall n\geq k \) este satisfacut\u a inegalitatea 
 
-%TODO
 \begin{displaymath}
   \left | x_{n} -x \right |< \frac{1}{2}. (1) 
 \end{displaymath}
@@ -266,9 +265,12 @@ Dar \c stim c\u a \(1+2+...+n = \frac{n(n+1)}{2}\), deci vom ob\c tine
 
 Acum 
 \begin{displaymath}
-  \lim_{n \to \infty }\frac{n(n+1)}{2\sqrt{n^{4}+1}}=\frac{1}{2} \c si \lim_{n \to \infty }\frac{n(n+1)}{2\sqrt{n^{4}+n}}=\frac{1}{2} (3)
+  \lim_{n \to \infty }\frac{n(n+1)}{2\sqrt{n^{4}+1}}=\frac{1}{2}  
 \end{displaymath}
-
+\c si 
+\begin{displaymath}
+    \lim_{n \to \infty }\frac{n(n+1)}{2\sqrt{n^{4}+n}}=\frac{1}{2} (3)
+\end{displaymath}
 
 Vom da la ambele factor comun for\c tat. 
 
@@ -608,8 +610,10 @@ Trec\^ and la lmit\u a ob\c tinem
 
 Iar\u a\c si din lema Stolz-Cesaro ob\c tinem 
 \begin{displaymath}
-  \lim_{n \to \infty }\frac{y_{n}}{1+\frac{1}{2}+...+\frac{1}{n-1}} = \frac{b_{1}}{b_{0}} . Cum \lim_{n \to \infty }\frac{{1+\frac{1}{2}+...+\frac{1}{n-1}}}{\ln n} = 1, rezult\u a c\u a \lim_{n \to \infty }\frac{y_{n}}{\ln n } = \frac{b_{1}}{b_{0}}, sau \lim_{n \to \infty }\frac{x_{n}-b_{0}n}{\ln n }  = \frac{b_{1}}{b_{0}}.
+  \lim_{n \to \infty }\frac{y_{n}}{1+\frac{1}{2}+...+\frac{1}{n-1}} = \frac{b_{1}}{b_{0}} . 
 \end{displaymath}
+
+Cum \(\lim_{n \to \infty }\frac{{1+\frac{1}{2}+...+\frac{1}{n-1}}}{\ln n} = 1\), rezult\u a c\u a \(\lim_{n \to \infty }\frac{y_{n}}{\ln n } = \frac{b_{1}}{b_{0}}\), sau \(\lim_{n \to \infty }\frac{x_{n}-b_{0}n}{\ln n }  = \frac{b_{1}}{b_{0}}\).
 
 
 
@@ -633,10 +637,11 @@ Atunci :
 
 \textbf{Demonstra\c tie}
 
-Fie \(f : \left ( 0,\infty  \right ) \to \mathbb{R}, f_{\left ( x \right )} = x+ \varphi \left ( \frac{1}{x} \right )\). Evident f este continu\u a \c si deoarece \(\varphi \left ( x \right )> 0\) rezult\u a c\u a \(f_{\left ( x \right )}> x, \forall x> 0 \). Deoarece \(\varphi\) este continu\u a \^ in 0, \(\lim_{x \to \infty }\left ( f_{\left ( x \right ) }-x\right ) = \lim_{x \to \infty }\varphi \left ( \frac{1}{x} \right )  = \lim_{t \to 0, t> 0 }\varphi \left ( t \right ) = \varphi \left ( 0 \right )\). 
+Fie \(f : \left ( 0,\infty  \right ) \to \mathbb{R}, f_{\left ( x \right )} = x+ \varphi \left ( \frac{1}{x} \right )\). Evident f este continu\u a \c si deoarece \(\varphi \left ( x \right )> 0\) rezult\u a c\u a \(f_{\left ( x \right )}> x, \forall x> 0 \). 
+Deoarece \(\varphi\) este continu\u a \^ in 0, \(\lim_{x \to \infty }\left ( f_{\left ( x \right ) }-x\right ) = \lim_{x \to \infty }\varphi \left ( \frac{1}{x} \right )  = \lim_{t \to 0, t> 0 }\varphi \left ( t \right ) = \varphi \left ( 0 \right )\). 
 A\c sadar \(y= x+\varphi \left ( 0 \right )\) este asimtot\u a oblic\u a la graficul func\c tiei f. Din prima teorem\u a 1 \c si 2 rezult\u a c\u a \(\lim_{n \to \infty }x_{n} = \infty\) \c si \(\lim_{n \to \infty }\frac{x_{n}}{n} = \varphi \left ( 0 \right )\). Deoarece \(\varphi\) este derivabil\u a \^ in 0, \(\lim_{x \to \infty } x\left ( f_{\left ( x \right )}-x- \varphi \left ( 0 \right ) \right ) = \lim_{x \to \infty } x\left ( \varphi \left ( \frac{1}{x} \right ) -\varphi \left ( 0 \right )\right ) = \lim_{t \to 0, t> 0 } \frac{\varphi \left ( t \right )-\varphi \left ( 0 \right )}{t} = {\varphi }'\left ( 0 \right )\). Cum \(\varphi \left ( 0 \right )> 0\), din prima teorem\u a , 3. , rezult\u a c\u a 
 \begin{displaymath}
-  \lim_{n \to \infty }\frac{n}{\ln n } \left ( \frac{x_{n}}{n }- \varphi \left ( 0 \right ) \right )= \frac{{\varphi}'\left ( 0 \right )}{\varphi \left ( 0 \right )}\)
+  \lim_{n \to \infty }\frac{n}{\ln n } \left ( \frac{x_{n}}{n }- \varphi \left ( 0 \right ) \right )= \frac{{\varphi}'\left ( 0 \right )}{\varphi \left ( 0 \right )}
 \end{displaymath}
 
 
@@ -644,9 +649,9 @@ A doua aplica\c tie a teoremei o constituie
 
 \textbf{Teorema 3} 
 
-Fie \(\varphi : \left [ 0,\infty  \right ) \to \mathbb{R}\) o func\c tie continu\u a, derivabil\u a \^ in 0 cu proprietatea c\u a \(\varphi \left ( x \right )> 1, \forall x> 0, \varphi \left ( 0 \right ) = 1\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\), prin condi\c tia ini\c tial\u a \(x_{1}> 0\) \c si rela\c tia de recuren\c t\u a \(x_{n+1}= x_{n }\varphi\left ( \frac{1}{x_{n}} \right )\) pentru orice n\geq 1. 
+Fie \(\varphi : \left [ 0,\infty  \right ) \to \mathbb{R}\) o func\c tie continu\u a, derivabil\u a \^ in 0 cu proprietatea c\u a \(\varphi \left ( x \right )> 1, \forall x> 0, \varphi \left ( 0 \right ) = 1\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\), prin condi\c tia ini\c tial\u a \(x_{1}> 0\) \c si rela\c tia de recuren\c t\u a \(x_{n+1}= x_{n }\varphi\left ( \frac{1}{x_{n}} \right )\) pentru orice \(n\geq 1\). 
 Atunci:
-\(\lim_{x \to \infty }x_{n} = \infty \c si \lim_{n \to \infty }\frac{x_{n}}{n} = {\varphi }'\left ( 0 \right )\) iar dac\u a \^ in plus  \({\varphi }'\left ( 0 \right )> 0 \c si \varphi\) este de dou\u a ori derivabil\u a \^ in 0, \(\lim_{n \to \infty }\frac{n}{\ln n}\left ( \frac{x_{n}}{n}-{\varphi }' \left ( 0 \right )\right )= \frac{{\varphi }''\left ( 0 \right )}{2{\varphi }'\left ( 0 \right )}\). 
+\(\lim_{x \to \infty }x_{n} = \infty\) \c si \(\lim_{n \to \infty }\frac{x_{n}}{n} = {\varphi }'\left ( 0 \right )\) iar dac\u a \^ in plus  \({\varphi }'\left ( 0 \right )> 0\) \c si \(\varphi\) este de dou\u a ori derivabil\u a \^ in 0, \(\lim_{n \to \infty }\frac{n}{\ln n}\left ( \frac{x_{n}}{n}-{\varphi }' \left ( 0 \right )\right )= \frac{{\varphi }''\left ( 0 \right )}{2{\varphi }'\left ( 0 \right )}\). 
 
 \textbf{Demonstra\c tie} 
 
@@ -655,9 +660,9 @@ Fie \(f : \left ( 0,\infty  \right ) \to \mathbb{R}, f_{\left ( x \right )}= x\v
   \lim_{x \to \infty }\left ( f_{\left ( x \right )} -x\right ) = \lim_{x \to \infty } x\left ( \varphi \left ( \frac{1}{x} \right ) -1\right )\lim_{t \to 0, t> 0}\frac{\varphi \left ( t \right ) - \varphi \left ( 0 \right )}{t} = 
 \end{displaymath}
 \begin{displaymath}
-  {\varphi }'\left ( 0 \right ). A\c sadar y = x +{\varphi }'\left ( 0 \right )
+  {\varphi }'\left ( 0 \right )
 \end{displaymath}
-
+A\c sadar \(y = x +{\varphi }'\left ( 0 \right )\).
  
 este asimtot\u a oblic\u a la graficul func\c tiei f. Din teorema 1, 1 si 2, rezult\u a c\u a \(\lim_{n \to \infty }x_{n} = \infty\) \c si \(\lim_{n \to \infty }\frac{x_{n}}{n} = {\varphi }'\left ( 0 \right )\). Deoarece \(\varphi\) este de dou\u a ori derivabil\u a \^ in 0,
 \begin{displaymath}
@@ -674,7 +679,7 @@ Din teorema 1, 3, rezult\u a c\u a
 
 \textbf{Corolar} 
 
-Fie \(\alpha \in \mathbb{R} \setminus \left \{ 0 \right \}\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c sia ini\c tial\u a \(x_{1}> 0\) \c si rela\c tia de recuren\c t\u a \(x_{n+1}= x_{n}+ e^{\frac{\alpha }{x_{n}}}\) pentru orice n\geq 1. 
+Fie \(\alpha \in \mathbb{R} \setminus \left \{ 0 \right \}\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c sia ini\c tial\u a \(x_{1}> 0\) \c si rela\c tia de recuren\c t\u a \(x_{n+1}= x_{n}+ e^{\frac{\alpha }{x_{n}}}\) pentru orice \(n\geq 1\). 
 Atunci \(\lim_{x \to \infty }x_{n} = \infty , \lim_{n \to \infty }\frac{x_{n}}{n} = 1, \lim_{n \to \infty }\frac{n}{\ln n }\left ( \frac{x_{n}}{n} -1\right ) = \alpha\). 
 
 \textbf{Demonstra\c tie} 
@@ -761,6 +766,7 @@ S\u a not\u am \(x_{n}= \frac{1}{n}\sum_{k=1}^{n}\frac{\ln\left ( n+k \right )}{
 \end{displaymath}
 
 Fie \(n\geq 2\). Avem \(\sum_{k=1}^{n}\frac{\ln\left ( n+1 \right )}{k}\leq \sum_{k=1}^{n}\frac{\ln\left ( n+k \right )}{k}\leq \sum_{k=1}^{n}\frac{\ln\left ( n+n \right )}{k}\), de unde 
+
 \(\frac{\ln \left ( n+1 \right )}{n}\sum_{k=1}^{n}\frac{1}{k}\leq x_{n}\leq \frac{\ln \left ( n+n \right )}{n}\sum_{k=1}^{n}\frac{1}{k}\), sau \^ inc\u a, 
 \begin{displaymath}
   \frac{\ln \left ( n+1 \right )}{\ln n}\cdot \frac{\sum_{k=1}^{n}\frac{1}{k}}{\ln n}\leq \frac{x_{n}}{\frac{\ln^{2}n}{n}}\leq \frac{\ln \left ( n+n \right )}{\ln n}\cdot \frac{\sum_{k=1}^{n}\frac{1}{k}}{\ln n }. (2)
@@ -789,7 +795,8 @@ Not\u am \(x_{n} = \frac{1}{n}\sum_{k=2}^{n}\frac{\ln \left ( n+k \right )}{k \l
   \sum_{k=2}^{n}\frac{1}{k\ln k}\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n} . (1)
 \end{displaymath}
 
-Fie \(n\geq 2\). Avem \(\sum_{k=2}^{n}\frac{\ln \left ( n+1 \right )}{k\ln k}\leq \sum_{k=2}^{n}\frac{\ln \left ( n+k \right )}{k\ln k}\leq \sum_{k=2}^{n}\frac{\ln \left ( n+1 \right )}{k\ln k}\), de unde, 
+Fie \(n\geq 2\). Avem \(\sum_{k=2}^{n}\frac{\ln \left ( n+1 \right )}{k\ln k}\leq \sum_{k=2}^{n}\frac{\ln \left ( n+k \right )}{k\ln k}\leq \sum_{k=2}^{n}\frac{\ln \left ( n+1 \right )}{k\ln k}\), de unde,
+
 \(\frac{\ln \left ( n+1 \right )}{n}\left ( \sum_{k=2}^{n}\frac{1}{k\ln k } \right )\leq x_{n}\leq \frac{\ln \left ( n+n \right )}{n}\left ( \sum_{k=2}^{n}\frac{1}{k\ln k } \right )\), sau \^ inc\u a, 
 \begin{displaymath}
   frac{\ln \left ( n+1 \right )}{n}\cdot \frac{\sum_{k=2}^{n}\frac{1}{k\ln k }}{\ln \left ( \ln n \right )}\leq \frac{x_{n}}{\frac{\left ( \ln n \right )\left [ \ln\left ( \ln n \right ) \right ]}{n}}\leq \frac{\ln \left ( n+n \right )}{n}\cdot \frac{\sum_{k=2}^{n}\frac{1}{k\ln k }}{\ln \left ( \ln n \right )}. (2)

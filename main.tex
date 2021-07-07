@@ -14,6 +14,14 @@
 \usepackage{multicol,multirow}
 \include{custom-lst-style}
 
+\newtheorem{definition}{Defini\c tie}
+\newtheorem{proposition}{Propozi\c tie}
+\newtheorem{demonstration}{Demonstra\c tie}
+\newtheorem{example}{Exemplu}
+\newtheorem{theorem}{Teorem\u a}
+\newtheorem{solve}{Rezolvare}
+\newtheorem{corollary}{Corolar}
+
 \facultatea{Matematic\u a \c si Informatic\u a}
 \specializarea{Informatic\u a}
 \teza{licen\c t\u a}
@@ -35,20 +43,22 @@
 
 \section{Teorie}
 
-\textbf{Defini\c tie}
-
+\begin{definition}
 Fie X o mul\c time. O func\c tie \(f:\mathbb{N} \to X\) se nume\c ste \c sir de elemente din mul\c timea X, sau sub o alt\u a formulare: se nume\c ste \c sir de elemente din mul\c timea X o func\c tie \(f:\mathbb{N} \to X\). \^ in mod uzual, se noteaz\u a \(f_{1} = x_{1} \in X, f_{2} = x_{2} \in X,......, f_{n} = x_{n} \in X,....\)
+\end{definition}
 
 \chapter{\c Siruri convergente de numere reale}
 
 \section{Teorie}
 
-\textbf{Defini\c tie}
+\begin{definition}
 
 Un \c sir \((x_{n})_{n \in \mathbb{N}} \subset \mathbb{R} \), se nume\c ste convergent dac\u a exist\u a \(x \in \mathbb{R}\) astfel \^ inc\^ at:
 \(\forall _{\varepsilon } > 0, \in n_{\varepsilon } \in \mathbb{N} \) astfel \^ inc\^ at este satisfacut\u a inegalitatea: \(\left | x_{n}- x \right | \leq \varepsilon \).
 
-\textbf{Propozi\c tie}
+\end{definition}
+
+\begin{proposition}
 
 Unicitatea limitei unui \c sir de numere reale
 Fie \((x_{n})_{n \in \mathbb{N}} \subset \mathbb{R}\). 
@@ -58,9 +68,12 @@ x_{n} \to y
 \end{matrix}\right.
 \) atunci \(x=y.\)
 
-\textbf{Demonstra\c tie}
+\end{proposition}
 
-S\u a presupunem, prin absurd, c\u a \(x \neq  y\). Cum suntem pe \(\mathbb{R}\) \^ inseamn\u a c\u a avem una din situa\c tiile \(x < y\) sau \(y < x\). Pentru a face o alegere, fie \(x < y\) atunci \(y – x > 0\) \c si din defini\c tie pentru \(\varepsilon = \frac{y- x}{2}  > 0\) rezult\u a c\u a, 
+\begin{demonstration}
+  S\u a presupunem, prin absurd, c\u a \(x \neq  y\). Cum suntem pe \(\mathbb{R}\) \^ inseamn\u a c\u a avem una din situa\c tiile \(x < y\) sau \(y < x\). Pentru a face o alegere, fie \(x < y\) atunci \(y – x > 0\) \c si din defini\c tie pentru \(\varepsilon = \frac{y- x}{2}  > 0\) rezult\u a c\u a, 
+\end{demonstration}
+
 
 \begin{itemize}
   \item \(\exists  n_{1} \in \mathbb{N}\) astfel \^ inc\^ at \(\left | x_{n} - x  \right | < \frac{y - x }{2} , \forall n \geq n_{1} \)
@@ -90,10 +103,11 @@ x_{n} \to x, z_{n} \rightarrow x
 \end{matrix}\right. \]
 Atunci \(y_{n} \to x\).
 
-\textbf{Demonstra\c tie}
-
-Vom ar\u ata pentru \^ inceput urm\u atoarea inegalitate. Dac\u a \(a \leq x\leq b\) atunci \(\left | x \right | \leq  max (\left | a \right |, \left | b \right |) \). 
+\begin{demonstration}
+  Vom ar\u ata pentru \^ inceput urm\u atoarea inegalitate. Dac\u a \(a \leq x\leq b\) atunci \(\left | x \right | \leq  max (\left | a \right |, \left | b \right |) \). 
 Vom folosi propriet\u a\c tile de la modul. Avem:
+\end{demonstration}
+
 
 \begin{displaymath}
   \left | x \right | = \left\{\begin{matrix} x, daca x \geq 0\\ -x, daca x< 0 \end{matrix}\right. \leq \left\{\begin{matrix} b\leq max(b,-b) = \left | b \right |\leq max(\left | a \right |,\left | b \right |) daca x\geq 0\\  -a\leq max(a,-a) = \left | a \right | 
@@ -128,19 +142,22 @@ A\c sadar am demonstrat : \(\forall \varepsilon > 0, \exists n_{\varepsilon \in 
 
 Conform defini\c tiei aceast\u a inegalitate \^ inseamn\u a c\u a \(y_{n} \to y.\) 
 
-\textbf{Exemplu}
+\begin{example}
+  Fie \(c \in \mathbb{R}\), Consider\u am \c sirul \(x_{n}=c\). Atunci \(\lim_{n \to \infty }x_{n}=c\) sau \(\lim_{n \to \infty }c=c\), limita unei constante este acea constant\u a. 
+\end{example}
 
-Fie \(c \in \mathbb{R}\), Consider\u am \c sirul \(x_{n}=c\). Atunci \(\lim_{n \to \infty }x_{n}=c\) sau \(\lim_{n \to \infty }c=c\), limita unei constante este acea constant\u a. 
 
-\textbf{Demonstra\c tie}
-
-\(\forall n\in \mathbb{N}\) avem \(x_{n} - c = c - c = 0 , \left | x_{n}-c \right |= 0\). De aici deducem c\u a \(\forall \varepsilon > 0, \exists n_{\varepsilon} = 1 \in \mathbb{N}\) astfel \^ inc\^ at pentru \(\forall n\geq n_{\varepsilon }= 1\) este satisfacut\u a inegalitatea \(\left | x_{n}-c \right |= 0< \varepsilon\). 
+\begin{demonstration}
+  \(\forall n\in \mathbb{N}\) avem \(x_{n} - c = c - c = 0 , \left | x_{n}-c \right |= 0\). De aici deducem c\u a \(\forall \varepsilon > 0, \exists n_{\varepsilon} = 1 \in \mathbb{N}\) astfel \^ inc\^ at pentru \(\forall n\geq n_{\varepsilon }= 1\) este satisfacut\u a inegalitatea \(\left | x_{n}-c \right |= 0< \varepsilon\). 
 	Conform defini\c tiei \(\lim_{n \to \infty }x_{n} = c. \)
-	
-\textbf{Propozi\c tie}
+\end{demonstration}
 
-Dac\u a un \c sir de numere naturale este convergent atunci el este sta\c tionar. 
+	
+\begin{proposition}
+  Dac\u a un \c sir de numere naturale este convergent atunci el este sta\c tionar. 
 Fie \((x_{n})_{n\in \mathbb{N}}\) un \c sir de numere naturale. Dac\u a exist\u a \(x\in \mathbb{R}\) astfel \^ inc\^ at \(\lim_{n \to \infty }x_{n}= x\), atunci exist\u a \(k\in \mathbb{N}\) astfel \^ inc\^ at \(x_{n}= x_{k}, \forall n\geq k\).
+\end{proposition}
+
 	
 Astfel spus scris desf\u a\c surat \c sirul arat\u a astfel:
 \begin{displaymath}
@@ -148,11 +165,9 @@ x_{1},x_{2},x_{3},x_{4},.........,x_{k-1},x_{k},x_{k},x_{k}........
 \end{displaymath}
 
 
-
-
-\textbf{Demonstra\c tie}
-
-Deoarece \(\lim_{n \to \infty }x_{n}= x\) pentru \(\varepsilon = \frac{1}{2}> 0, \exists n_{\frac{1}{2}}\in \mathbb{N}\) astfel \^ inc\^ at \(\forall n\geq n_{\frac{1}{2}}\) este satisfacut\u a inegalitatea \(\left | x_{n} -x \right |<  \frac{1}{2}\). 
+\begin{demonstration}
+  Deoarece \(\lim_{n \to \infty }x_{n}= x\) pentru \(\varepsilon = \frac{1}{2}> 0, \exists n_{\frac{1}{2}}\in \mathbb{N}\) astfel \^ inc\^ at \(\forall n\geq n_{\frac{1}{2}}\) este satisfacut\u a inegalitatea \(\left | x_{n} -x \right |<  \frac{1}{2}\). 
+\end{demonstration}
 	
 S\u a not\u am \(k=n_{\frac{1}{2}}\in \mathbb{N}\) \c si s\u a re\c tinem c\u a \c stim c\u a \(\forall n\geq k \) este satisfacut\u a inegalitatea 
 
@@ -202,10 +217,11 @@ A\c sasar am demonstrat: \(\forall n\geq k avem x_{n}=x_{k},\) ceea ce \^ inchei
 \end{displaymath}
 
 
-\textbf{Rezolvare}
-
-Not\u am \( x_{n}= \frac{1}{\sqrt{n^{4}+1}} + \frac{2}{\sqrt{n^{4}+2}}+\frac{3}{\sqrt{n^{4}+3}}+........+\frac{n}{\sqrt{n^{4}+n}} \).
+\begin{solve}
+  Not\u am \( x_{n}= \frac{1}{\sqrt{n^{4}+1}} + \frac{2}{\sqrt{n^{4}+2}}+\frac{3}{\sqrt{n^{4}+3}}+........+\frac{n}{\sqrt{n^{4}+n}} \).
 Adic\u a \( x_{n}= \sum_{k=1}^{n}\frac{k}{n^{4}+k}\).
+\end{solve}
+
 
 \^ in continuare proced\u am astfel. De num\u ar\u ator nu ne atingem. Vom lucra cu numitorul, ideea fiind de a se avea acela\c si numitor peste tot. 
 
@@ -285,22 +301,24 @@ Din (2) \c si (3) \c si teorema cle\c stelui rezult\u a c\u a:
 
 \section{Teorie}
 
-\textbf{Defini\c tie}
+\begin{definition}
+  Fie \((x_{n})_{n\in \mathbb{N}}\) un \c sir de numere reale. \c sirul \((x_{n})_{n\in \mathbb{N}}\) se nume\c ste m\u arginit dac\u a \c si numai dac\u a \(\exists  a, b \in \mathbb{R}, a< b\) astfel \^ inc\^ at \(\forall n\in \mathbb{N}\) este satisfacut\u a inegalitatea \(x_{n}\in \left [ a,b \right ]\), sau echivalent \(\exists M> 0\) astefle \^ inc\^ at \(\forall  n\in \mathbb{N}\) este satisfacut\u a inegalitatea \(\left | x_{n} \right |\leq M\).
+\end{definition}
 
-Fie \((x_{n})_{n\in \mathbb{N}}\) un \c sir de numere reale. \c sirul \((x_{n})_{n\in \mathbb{N}}\) se nume\c ste m\u arginit dac\u a \c si numai dac\u a \(\exists  a, b \in \mathbb{R}, a< b\) astfel \^ inc\^ at \(\forall n\in \mathbb{N}\) este satisfacut\u a inegalitatea \(x_{n}\in \left [ a,b \right ]\), sau echivalent \(\exists M> 0\) astefle \^ inc\^ at \(\forall  n\in \mathbb{N}\) este satisfacut\u a inegalitatea \(\left | x_{n} \right |\leq M\).
-
-\textbf{Defini\c tie }
-
-Fie \((x_{n})_{n\in \mathbb{N}}\) un \c sir de numere reale. Spunem c\u a \(\lim_{n \to \infty }x_{n}=\infty\) dac\u a, \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astfel \^ inc\^ at pentru \(\forall n\geq n_{\varepsilon }\) este satisfacut\u a inegalitatea \(x_{n}> \varepsilon\). 
+\begin{definition}
+  Fie \((x_{n})_{n\in \mathbb{N}}\) un \c sir de numere reale. Spunem c\u a \(\lim_{n \to \infty }x_{n}=\infty\) dac\u a, \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astfel \^ inc\^ at pentru \(\forall n\geq n_{\varepsilon }\) este satisfacut\u a inegalitatea \(x_{n}> \varepsilon\). 
 Sau \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astfel \^ inc\^ at \(x_{n}> \varepsilon ,\forall n\geq n_{\varepsilon }\). 
+\end{definition}
 
-\textbf{Propozi\c tie}
+
+\begin{proposition}
+  Fie \((x_{n})_{n\in \mathbb{N}}\) un \c sir de numere reale. Dac\u a \(\lim_{n \to \infty }x_{n}=\infty\) atunci \( \lim_{n \to \infty }\frac{1}{x_{n}}=0.\) 
+\end{proposition}
+
+\begin{demonstration}
+  Fie \(\varepsilon > 0\). Deoarece \(\lim_{n \to \infty }x_{n}=\infty\) din defini\c tie aplicat\u a pentru \(\frac{1}{\varepsilon }> 0\) rezult\u a c\u a \(\exists n_{\varepsilon }\in \mathbb{N}\) astfel \^ inc\^ at pentru \(\forall n\geq n_{\varepsilon }\) este satisfacut\u a inegalitatea \(x_{n}> \frac{1}{\varepsilon }\).
+\end{demonstration}
  
-Fie \((x_{n})_{n\in \mathbb{N}}\) un \c sir de numere reale. Dac\u a \(\lim_{n \to \infty }x_{n}=\infty\) atunci \( \lim_{n \to \infty }\frac{1}{x_{n}}=0.\) 
-
-\textbf{Demonstra\c tie} 
-
-Fie \(\varepsilon > 0\). Deoarece \(\lim_{n \to \infty }x_{n}=\infty\) din defini\c tie aplicat\u a pentru \(\frac{1}{\varepsilon }> 0\) rezult\u a c\u a \(\exists n_{\varepsilon }\in \mathbb{N}\) astfel \^ inc\^ at pentru \(\forall n\geq n_{\varepsilon }\) este satisfacut\u a inegalitatea \(x_{n}> \frac{1}{\varepsilon }\). 
 
 Din aceast\u a inegalitate rezult\u a c\u a \(\forall n\geq n_{\varepsilon }\) este satisfacut\u a inegalitatea \(x_{n}> 0\), prin urmare are sens frac\c tia \(\frac{1}{x_{n}}, \forall n\geq n_{\varepsilon }\). Dar inegalitatea de mai sus este echivalent\u a cu \(\exists n_{\varepsilon }\in \mathbb{N}\) astfel \^ inc\^ at \(\forall n\geq n_{\varepsilon }\) este satisfacut\u a inegalitatea\( \frac{1}{x_{n}}< \varepsilon.\) Conform defini\c tiei aceasta \^ inseamn\u a c\u a \(\lim_{n \to \infty }\frac{1}{x_{n}}=0\).
 
@@ -321,12 +339,14 @@ Dac\u a
   \lim_{n \to \infty }\frac{x_{n}}{ \alpha _{n}}= \lim_{n \to \infty }\frac{x_{n} - x_{n-1}}{ \alpha _{n}- \alpha _{n-1}}.
 \end{displaymath}
 
+\begin{demonstration}
+  Fie \(\alpha = \lim_{n \to \infty }\frac{x_{n}-x_{n-1}}{\alpha _{n}-\alpha _{n-1}}\). 
+\end{demonstration}
 
-\textbf{Demonstra\c tie} 
 
-Fie \(\alpha = \lim_{n \to \infty }\frac{x_{n}-x_{n-1}}{\alpha _{n}-\alpha _{n-1}}\) . 
 Atunci \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astefl \^ inc\^ at \(\left | \frac{x_{n}-x_{n-1}}{\alpha _{n}- \alpha _{n-1}} - \alpha \right |< \frac{\varepsilon }{2} \forall  n\geq n_{\varepsilon  }\)
-Sau , \(\alpha _{n} \uparrow, 
+
+Sau, \(\alpha _{n} \uparrow, 
 \left | x_{n}- x_{n-1 }- \alpha \left ( \alpha _{n}-\alpha _{n-1} \right ) \right | < \frac{\varepsilon }{2}\left ( \alpha _{n}- \alpha _{n-1} \right ), \forall n\geq n_{\varepsilon }\). (1) 
 
 Not\u am cu \(k=n_{\varepsilon }+1\). Pentru \(n\geq k \)lu\^ and \^ in (1), \(n= k+1, k+2,....,n\) ob\c tinem:
@@ -368,9 +388,10 @@ De unde ob\c tinem, prin adunare:
 \end{displaymath}
 
 
-\textbf{Demonstra\c tie} 
+\begin{demonstration}
+  Fie \(x_{n}=1^{\alpha }+2^{\alpha }+....+n^{\alpha },a_{n}= n^{\alpha }\). Deoarece \(\alpha > 0 , \alpha \uparrow \infty.\) Din lema Stolz-Cesaro, cazul 
+\end{demonstration}
 
-Fie \(x_{n}=1^{\alpha }+2^{\alpha }+....+n^{\alpha },a_{n}= n^{\alpha }\). Deoarece \(\alpha > 0 , \alpha \uparrow \infty.\) Din lema Stolz-Cesaro, cazul 
 \begin{displaymath}
   \left [ \frac{1}{\infty } \right ], 
 \lim_{n \to \infty }\frac{1^{\alpha }+2^{\alpha }+....+n^{\alpha }}{n^{\alpha +1}}=\lim_{n \to \infty }\frac{x_{n}}{\alpha _{n}}= \lim_{n \to \infty } \frac{x_{n+1}-x_{n}}{\alpha _{n+1}-_{n}}=\lim_{n \to \infty } \frac{\left ( n+1 \right )^{\alpha }}{\left ( n+1 \right )^{\alpha+1} -n^{\alpha +1}}
@@ -419,9 +440,10 @@ Am folosit limita fundamental\u a
 \end{displaymath}
 
 
-\textbf{Rezolvare}
+\begin{solve}
+  Fie \( x_{n} = e^{\sqrt{1}}+ e^{\sqrt{2}}+......+e^{\sqrt{n}}, a_{n}= \sqrt{n}e^{\sqrt{n}}.\) Avem de calculat \(\lim_{n \to \infty }\frac{x_{n}}{a_{n}}= \left [ \frac{1}{\infty } \right ]\)
+\end{solve}
 
-Fie \( x_{n} = e^{\sqrt{1}}+ e^{\sqrt{2}}+......+e^{\sqrt{n}}, a_{n}= \sqrt{n}e^{\sqrt{n}}.\) Avem de calculat \(\lim_{n \to \infty }\frac{x_{n}}{a_{n}}= \left [ \frac{1}{\infty } \right ]\)
 
 
 Din lema Stolz-Cesaro 
@@ -486,9 +508,10 @@ Din acestea deducem c\u a:
 Deci ultima limit\u a din enun\c t \(\lim_{n \to \infty } \frac{x_{n}}{\alpha _{n}} = 2\)
 \end{enumerate}
 
-\textbf{Propozi\c tie} 
-
-Fie \(\left ( x_{n} \right )_{n\in \mathbb{N}}\) un \c sir de numere reale strict pozitive. Dac\u a \(\lim_{n \to \infty }\frac{x_{n+1}}{x_{n}}\in \mathbb{R}\) atunci \(\lim_{n \to \infty } \sqrt[n]{x_{n}}\in \mathbb{R}\). \^ in plus \(\lim_{n \to \infty } \sqrt[n]{x_{n}} = \lim_{n \to \infty }\frac{x_{n+1}}{x_{n}}\). 
+\begin{proposition}
+  Fie \(\left ( x_{n} \right )_{n\in \mathbb{N}}\) un \c sir de numere reale strict pozitive. Dac\u a \(\lim_{n \to \infty }\frac{x_{n+1}}{x_{n}}\in \mathbb{R}\) atunci \(\lim_{n \to \infty } \sqrt[n]{x_{n}}\in \mathbb{R}\). \^ in plus \(\lim_{n \to \infty } \sqrt[n]{x_{n}} = \lim_{n \to \infty }\frac{x_{n+1}}{x_{n}}\).
+\end{proposition}
+ 
 Pe scurt 
 
 \begin{displaymath}
@@ -496,10 +519,10 @@ Pe scurt
 \end{displaymath}
 
 
+\begin{definition}
+  Din defini\c tia logaritmilor naturali avem 
+\end{definition}
 
-\textbf{Demonstra\c tie} 
-
-Din defini\c tia logaritmilor naturali avem 
 \begin{displaymath}
   \ln x = \alpha  \Leftrightarrow x = e^{\alpha }
 \end{displaymath}
@@ -554,9 +577,10 @@ De aici deducem c\u a
 
 \section{Teorie}
 
-\textbf{Teorem\u a}
+\begin{theorem}
+   Fie \(a\in \mathbb{R}\) \c si \(f: \left ( \alpha ,\infty  \right )n \to \mathbb{R}\) o func\c tie continu\u a cu proprietatea c\u a \(f_{(x)}> x, \forall x > a\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c tia ini\c tial\u a \(x_{1}> \alpha\) \c si rela\c tia de recuren\c t\u a \(x_{n+1} = f_{\left ( x_{n} \right )}\) pentru orice  \(n\geq 1	\)
+\end{theorem}
 
- Fie \(a\in \mathbb{R}\) \c si \(f: \left ( \alpha ,\infty  \right )n \to \mathbb{R}\) o func\c tie continu\u a cu proprietatea c\u a \(f_{(x)}> x, \forall x > a\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c tia ini\c tial\u a \(x_{1}> \alpha\) \c si rela\c tia de recuren\c t\u a \(x_{n+1} = f_{\left ( x_{n} \right )}\) pentru orice  \(n\geq 1	\)
 Atunci 
 \begin{displaymath}
   \lim_{x \to \infty }x_{n} = \infty
@@ -574,10 +598,11 @@ Dac\u a exist\u a \(b_{0}, b_{1}\in \mathbb{R}, b_{0 }\neq 0\) astfel \^ inc\^ a
 \end{displaymath}
 
 
-\textbf{Demonstra\c tie}
-
-Din condi\c tia ini\c tial\u a avem \(x_{1}> \alpha\). Presupunem \(x_{n}> \alpha\).
+\begin{demonstration}
+  Din condi\c tia ini\c tial\u a avem \(x_{1}> \alpha\). Presupunem \(x_{n}> \alpha\).
 Din ipoteza \(f_{\left ( x \right )}> x, \forall  x> \alpha\) rezult\u a c\u a \(f_{\left ( x _{n}\right )}> x_{n}\), adic\u a \(x_{n+1}> x_{n}\). Cum Presupunem \(x_{n}> \alpha\) rezult\u a c\u a \(x_{n+1}> \alpha\). Conform induc\c tiei matematice rezult\u a c\u a \(x_{n}> \alpha,  \forall n\geq 1\). 
+\end{demonstration}
+
 
 Fie \(n\geq 1\). Din ipoteza \(f_{\left ( x \right )}> x, \forall x> \alpha\) \c si \(x_{n}> \alpha\) rezult\u a c\u a \(f_{\left ( x_{n} \right )}> x_{n}\) sau \(x_{n+1}> x_{n}\). A\c sadar \c sirul este strict cresc\u ator. Dac\u a prin absurd ar fi majorat, atunci din  teorema lui Weierstrass este convergent \c si fie \(\lim_{n \to \infty }x_{n} = L\in \mathbb{R}\). Cum \c sirul este cresc\u atpr avem \(x_{n}\geq x_{1}, \forall n\geq 1\) de unde, trec\^ and la limit\u a rezult\u a ca \(L \geq 1\). Cum \(x_{1}\geq \alpha\) rezult\u a c\u a \(L\geq \alpha\), iar din ipoteza \(f_{\left ( x \right )}\geq x, \forall x\geq \alpha\) rezult\u a, in particular, \(f_{\left ( L \right )}> L\). Deoarece \(\lim_{n \to \infty }x_{n}= L\), iar f este contnu\u a, rezult\u a c\u a \(\lim_{n \to \infty }f_{\left ( x_{n} \right )} = f_{\left ( L \right )}\) sau \(\lim_{n \to \infty }x_{n+1} = f_{\left ( L \right )}\), adic\u a \(\lim_{n \to \infty }x_{n} = f_{\left ( L \right )}\). Cum \(\lim_{n \to \infty }x_{n} = f_{\left ( L \right )}\), din unicitatea limitei unui \c sir de numere reale rezult\u a c\u a \(f_{\left ( L \right )} = L\), ceea ce este fals. A\c ssadar \c sirul \(\left ( x_{n} \right )_{n\geq 1}\) nu este majorat \c si fiind cresc\u ator, dup\u a cum am demonstrat, \(\lim_{n \to \infty }x_{n}=\infty\). 
 Deoarece \(y= x + b_{0}\) este asimtot\u a oblic\u a la graficul func\c tiei f, conform defini\c tiei \(\lim_{x \to \infty }\left ( f_{\left ( x \right )}-x \right )= b_{0}\). Cum, din 1. , \(\lim_{x \to \infty }x_{n} = \infty\), din caracterizarea limitei unei func\c tii \^ intr-un punct cu \c siruri rezult\u a c\u a \(\lim_{x \to \infty }\left ( f_{\left ( x_{n} \right )} -x_{n}\right )= b_{0}\) sau \c tin\^ and cont de rela\c tia de recuren\c t\u a \(\lim_{x \to \infty }\left ( x_{n+1} -x_{n}\right )=b_{0}\). Din lema Stolz-Cesaro, cazul \(\left [ \frac{1}{\infty } \right ],\) rezult\u a c\u a \(\lim_{n \to \infty }\frac{x_{n}}{n}= \lim_{n \to \infty}\left ( x_{n+1} -x_{n}\right ) = b_{0}\).
@@ -616,17 +641,11 @@ Iar\u a\c si din lema Stolz-Cesaro ob\c tinem
 Cum \(\lim_{n \to \infty }\frac{{1+\frac{1}{2}+...+\frac{1}{n-1}}}{\ln n} = 1\), rezult\u a c\u a \(\lim_{n \to \infty }\frac{y_{n}}{\ln n } = \frac{b_{1}}{b_{0}}\), sau \(\lim_{n \to \infty }\frac{x_{n}-b_{0}n}{\ln n }  = \frac{b_{1}}{b_{0}}\).
 
 
-
-
-\textbf{Nou}
-
-
-
 O prim\u a aplica\c tie a tepremei o constituie:
 
-\textbf{Teorema 2}
-
-Fie \(\varphi : \left [ 0,\infty  \right ) \to \mathbb{R}\) o func\c tie continu\u a cu proprietatea c\u a \(\varphi_{\left ( x \right )}> 0, \forall x> 0\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c tia ini\c tial\u a \(x_{1}> 0\) \c si rela\c tia de recuren\c t\u a \(x_{n+1} = x_{n} + \varphi \left ( \frac{1}{x_{n}} \right )\) pentru \(\forall  n\geq 1\). 
+\begin{theorem}
+  Fie \(\varphi : \left [ 0,\infty  \right ) \to \mathbb{R}\) o func\c tie continu\u a cu proprietatea c\u a \(\varphi_{\left ( x \right )}> 0, \forall x> 0\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c tia ini\c tial\u a \(x_{1}> 0\) \c si rela\c tia de recuren\c t\u a \(x_{n+1} = x_{n} + \varphi \left ( \frac{1}{x_{n}} \right )\) pentru \(\forall  n\geq 1\). 
+\end{theorem}
 
 Atunci :
 \(\lim_{x \to \infty } x_{n} = \infty\) \c si \(\lim_{x \to \infty }\frac{x_{n}}{n} = \varphi\left ( 0 \right )\) iar dac\u a \^ in plus , \(\varphi\left ( 0 \right )> 0\) \c si  \(\varphi\) este derivabil\u a \^ in 0, 
@@ -635,9 +654,10 @@ Atunci :
 \end{displaymath}
  
 
-\textbf{Demonstra\c tie}
+\begin{demonstration}
+  Fie \(f : \left ( 0,\infty  \right ) \to \mathbb{R}, f_{\left ( x \right )} = x+ \varphi \left ( \frac{1}{x} \right )\). Evident f este continu\u a \c si deoarece \(\varphi \left ( x \right )> 0\) rezult\u a c\u a \(f_{\left ( x \right )}> x, \forall x> 0 \). 
+\end{demonstration}
 
-Fie \(f : \left ( 0,\infty  \right ) \to \mathbb{R}, f_{\left ( x \right )} = x+ \varphi \left ( \frac{1}{x} \right )\). Evident f este continu\u a \c si deoarece \(\varphi \left ( x \right )> 0\) rezult\u a c\u a \(f_{\left ( x \right )}> x, \forall x> 0 \). 
 Deoarece \(\varphi\) este continu\u a \^ in 0, \(\lim_{x \to \infty }\left ( f_{\left ( x \right ) }-x\right ) = \lim_{x \to \infty }\varphi \left ( \frac{1}{x} \right )  = \lim_{t \to 0, t> 0 }\varphi \left ( t \right ) = \varphi \left ( 0 \right )\). 
 A\c sadar \(y= x+\varphi \left ( 0 \right )\) este asimtot\u a oblic\u a la graficul func\c tiei f. Din prima teorem\u a 1 \c si 2 rezult\u a c\u a \(\lim_{n \to \infty }x_{n} = \infty\) \c si \(\lim_{n \to \infty }\frac{x_{n}}{n} = \varphi \left ( 0 \right )\). Deoarece \(\varphi\) este derivabil\u a \^ in 0, \(\lim_{x \to \infty } x\left ( f_{\left ( x \right )}-x- \varphi \left ( 0 \right ) \right ) = \lim_{x \to \infty } x\left ( \varphi \left ( \frac{1}{x} \right ) -\varphi \left ( 0 \right )\right ) = \lim_{t \to 0, t> 0 } \frac{\varphi \left ( t \right )-\varphi \left ( 0 \right )}{t} = {\varphi }'\left ( 0 \right )\). Cum \(\varphi \left ( 0 \right )> 0\), din prima teorem\u a , 3. , rezult\u a c\u a 
 \begin{displaymath}
@@ -647,15 +667,16 @@ A\c sadar \(y= x+\varphi \left ( 0 \right )\) este asimtot\u a oblic\u a la graf
 
 A doua aplica\c tie a teoremei o constituie 
 
-\textbf{Teorema 3} 
-
-Fie \(\varphi : \left [ 0,\infty  \right ) \to \mathbb{R}\) o func\c tie continu\u a, derivabil\u a \^ in 0 cu proprietatea c\u a \(\varphi \left ( x \right )> 1, \forall x> 0, \varphi \left ( 0 \right ) = 1\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\), prin condi\c tia ini\c tial\u a \(x_{1}> 0\) \c si rela\c tia de recuren\c t\u a \(x_{n+1}= x_{n }\varphi\left ( \frac{1}{x_{n}} \right )\) pentru orice \(n\geq 1\). 
+\begin{theorem}
+  Fie \(\varphi : \left [ 0,\infty  \right ) \to \mathbb{R}\) o func\c tie continu\u a, derivabil\u a \^ in 0 cu proprietatea c\u a \(\varphi \left ( x \right )> 1, \forall x> 0, \varphi \left ( 0 \right ) = 1\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\), prin condi\c tia ini\c tial\u a \(x_{1}> 0\) \c si rela\c tia de recuren\c t\u a \(x_{n+1}= x_{n }\varphi\left ( \frac{1}{x_{n}} \right )\) pentru orice \(n\geq 1\). 
+\end{theorem}
 Atunci:
 \(\lim_{x \to \infty }x_{n} = \infty\) \c si \(\lim_{n \to \infty }\frac{x_{n}}{n} = {\varphi }'\left ( 0 \right )\) iar dac\u a \^ in plus  \({\varphi }'\left ( 0 \right )> 0\) \c si \(\varphi\) este de dou\u a ori derivabil\u a \^ in 0, \(\lim_{n \to \infty }\frac{n}{\ln n}\left ( \frac{x_{n}}{n}-{\varphi }' \left ( 0 \right )\right )= \frac{{\varphi }''\left ( 0 \right )}{2{\varphi }'\left ( 0 \right )}\). 
 
-\textbf{Demonstra\c tie} 
+\begin{demonstration}
+  Fie \(f : \left ( 0,\infty  \right ) \to \mathbb{R}, f_{\left ( x \right )}= x\varphi \left ( \frac{1}{x} \right )\). Evident f este continu\u a \c si deoarece \(\varphi \left ( x \right )> 1,\forall x> 0\) rezult\u a c\u a \(f_{\left ( x \right )}> x, \forall x> 0\). Deoarece \(\varphi\) este continu\u a \^ in 0 \c si \(\varphi \left ( 0 \right )= 1\) rezult\u a c\u a \(\lim_{x \to \infty }\frac{f_{\left ( x \right )}}{x} = \lim_{x \to \infty } \varphi \left ( \frac{1}{x} \right ) = \lim_{t \to 0, t> 0 }\varphi \left ( t \right ) = \varphi \left ( 0 \right ) = 1\). Deoarece \(\varphi\) este derivabil\u a \^ in 0, 
+\end{demonstration}
 
-Fie \(f : \left ( 0,\infty  \right ) \to \mathbb{R}, f_{\left ( x \right )}= x\varphi \left ( \frac{1}{x} \right )\). Evident f este continu\u a \c si deoarece \(\varphi \left ( x \right )> 1,\forall x> 0\) rezult\u a c\u a \(f_{\left ( x \right )}> x, \forall x> 0\). Deoarece \(\varphi\) este continu\u a \^ in 0 \c si \(\varphi \left ( 0 \right )= 1\) rezult\u a c\u a \(\lim_{x \to \infty }\frac{f_{\left ( x \right )}}{x} = \lim_{x \to \infty } \varphi \left ( \frac{1}{x} \right ) = \lim_{t \to 0, t> 0 }\varphi \left ( t \right ) = \varphi \left ( 0 \right ) = 1\). Deoarece \(\varphi\) este derivabil\u a \^ in 0, 
 \begin{displaymath}
   \lim_{x \to \infty }\left ( f_{\left ( x \right )} -x\right ) = \lim_{x \to \infty } x\left ( \varphi \left ( \frac{1}{x} \right ) -1\right )\lim_{t \to 0, t> 0}\frac{\varphi \left ( t \right ) - \varphi \left ( 0 \right )}{t} = 
 \end{displaymath}
@@ -677,18 +698,21 @@ Din teorema 1, 3, rezult\u a c\u a
 \end{displaymath}
  
 
-\textbf{Corolar} 
-
-Fie \(\alpha \in \mathbb{R} \setminus \left \{ 0 \right \}\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c sia ini\c tial\u a \(x_{1}> 0\) \c si rela\c tia de recuren\c t\u a \(x_{n+1}= x_{n}+ e^{\frac{\alpha }{x_{n}}}\) pentru orice \(n\geq 1\). 
+\begin{corollary}
+  Fie \(\alpha \in \mathbb{R} \setminus \left \{ 0 \right \}\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c sia ini\c tial\u a \(x_{1}> 0\) \c si rela\c tia de recuren\c t\u a \(x_{n+1}= x_{n}+ e^{\frac{\alpha }{x_{n}}}\) pentru orice \(n\geq 1\).
+\end{corollary}
+ 
 Atunci \(\lim_{x \to \infty }x_{n} = \infty , \lim_{n \to \infty }\frac{x_{n}}{n} = 1, \lim_{n \to \infty }\frac{n}{\ln n }\left ( \frac{x_{n}}{n} -1\right ) = \alpha\). 
 
-\textbf{Demonstra\c tie} 
+\begin{demonstration}
+  Fie \(\varphi :\left [ 0,\infty  \right ) \to \left ( 0,\infty \right ), \varphi \left ( x \right ) = e^{\alpha x}\). S\u a observ\u am c\u a \({\varphi }'\left ( x \right ) = \alpha e^{\alpha x}\). Aplic\u am de dou\u a ori func\c tia \(\varphi\). 
+\end{demonstration}
 
-Fie \(\varphi :\left [ 0,\infty  \right ) \to \left ( 0,\infty \right ), \varphi \left ( x \right ) = e^{\alpha x}\). S\u a observ\u am c\u a \({\varphi }'\left ( x \right ) = \alpha e^{\alpha x}\). Aplic\u am de dou\u a ori func\c tia \(\varphi\). 
 
-\textbf{Corolar} 
+\begin{corollary}
+  Fie \(\alpha > 1,\beta > 0\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c tia \(x_{1} > 0\) \c si rela\c tia de recuren\c t\u a 
+\end{corollary}
 
-Fie \(\alpha > 1,\beta > 0\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c tia \(x_{1} > 0\) \c si rela\c tia de recuren\c t\u a 
 \begin{displaymath}
   x_{n+1} = x_{n} + \ln\left ( \alpha +\frac{\beta }{x_{n}} \right ), pentru \forall n\geq 1.
 \end{displaymath}
@@ -699,13 +723,14 @@ Atunci
   \lim_{x \to \infty }=\infty ,\lim_{n \to \infty }\frac{x_{n}}{n} = \ln \alpha , \lim_{n \to \infty }\frac{n}{\ln n}\left ( \frac{x_{n}}{n} - \ln \alpha \right ) = \frac{\beta }{\alpha \ln \alpha }.
 \end{displaymath}
  
-\textbf{Demonstra\c tie} 
+\begin{demonstration}
+  Fie \(\varphi :\left [ 0,\infty  \right ) \to \left ( 0,\infty  \right ), \varphi \left ( x \right ) = \ln \left ( \alpha   + \beta x \right )\). S\u a observ\u am c\u a \({\varphi }'\left ( x \right ) = \frac{\beta }{\alpha +\beta x}\). Aplic\u am teorema 2 pentru func\c tia \(\varphi\).
+\end{demonstration}
 
-Fie \(\varphi :\left [ 0,\infty  \right ) \to \left ( 0,\infty  \right ), \varphi \left ( x \right ) = \ln \left ( \alpha   + \beta x \right )\). S\u a observ\u am c\u a \({\varphi }'\left ( x \right ) = \frac{\beta }{\alpha +\beta x}\). Aplic\u am teorema 2 pentru func\c tia \(\varphi\).
 
-\textbf{Corolar} 
-
-Fie \(\alpha > 1,\beta > 0\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c tia ini\c tial\u a \(x_{1}> 0\) \c si rela\c tia de recuren\c t\u a
+\begin{corollary}
+  Fie \(\alpha > 1,\beta > 0\). Definim \c sirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c tia ini\c tial\u a \(x_{1}> 0\) \c si rela\c tia de recuren\c t\u a
+\end{corollary}
 \begin{displaymath}
   x_{n+1} = x_{n} + \sqrt{\alpha +\frac{\beta }{x_{n}}}, pentru \forall n\geq 1.
 \end{displaymath}
@@ -717,9 +742,10 @@ Atunci
 \end{displaymath}
 
 
-\textbf{Demonstra\c tie}
- 
+\begin{demonstration}
 Fie \(\varphi :\left [ 0,\infty  \right ) \to \left ( 0,\infty  \right ), \varphi \left ( x \right ) = \sqrt{\alpha +\beta x}\). S\u a observ\u am c\u a \({\varphi }'\left ( x \right ) = \frac{\beta }{2}\left ( \alpha +\beta x \right )^{-\frac{1}{2}}\). Aplic\u am teorema 2 pentru func\c tia \(\varphi\). 
+\end{demonstration}
+
 
 \section{Exerci\c tii}
 
@@ -728,9 +754,9 @@ Calcula\c ti \begin{displaymath}
 \end{displaymath}
 
 
-\textbf{Demonstra\c tie} 
-
-S\u a not\u am \(x_{n} = \frac{1}{n}\sum_{k=1}^{n} k \ln \left ( n+k \right ), n \geq 1\). 
+\begin{demonstration}
+  S\u a not\u am \(x_{n} = \frac{1}{n}\sum_{k=1}^{n} k \ln \left ( n+k \right ), n \geq 1\). 
+\end{demonstration}
 
 \begin{displaymath}
   \sum_{k=1}^{n}k\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n}. (1)
@@ -757,10 +783,11 @@ Calcula\c ti
   \lim_{n \to \infty }\frac{\sum_{k=1}^{n}\frac{1}{k\left ( \sqrt[n]{n+k}-1 \right )}}{\frac{\ln^{2}n}{n}} = 1
 \end{displaymath}
 
-\textbf{Demonstra\c tie} 
-
-S\u a not\u am \(x_{n}= \frac{1}{n}\sum_{k=1}^{n}\frac{\ln\left ( n+k \right )}{k}, n\geq 1\). 
+\begin{demonstration}
+  S\u a not\u am \(x_{n}= \frac{1}{n}\sum_{k=1}^{n}\frac{\ln\left ( n+k \right )}{k}, n\geq 1\). 
 \c stim c\u a 
+
+\end{demonstration}
 \begin{displaymath}
   \sum_{k=1}^{n}\frac{1}{k}\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n}. (1)
 \end{displaymath}
@@ -787,10 +814,11 @@ Calcula\c ti
 \end{displaymath}
 
 
-\textbf{Demonstra\c tie}
- 
-Not\u am \(x_{n} = \frac{1}{n}\sum_{k=2}^{n}\frac{\ln \left ( n+k \right )}{k \ln k}, \geq 2.\)
+\begin{demonstration}
+  Not\u am \(x_{n} = \frac{1}{n}\sum_{k=2}^{n}\frac{\ln \left ( n+k \right )}{k \ln k}, \geq 2.\)
 \c stim c\u a 
+
+\end{demonstration}
 \begin{displaymath}
   \sum_{k=2}^{n}\frac{1}{k\ln k}\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n} . (1)
 \end{displaymath}

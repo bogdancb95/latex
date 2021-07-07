@@ -118,25 +118,25 @@ Vom folosi propriet\u a\c tile de la modul. Avem:
 Din \(x_{n} \leq y_{n}\leq z_{n}\), \(\forall n\in \mathbb{N} \) rezult\u a c\u a \(x_{n}-x \leq y_{n}-x \leq z_{n}-x, \forall n\in \mathbb{N}. \)
 De aici folosind inegalitatea demonstrat\u a deducem c\u a:
 
-\[\left | y_{n} - x \right |\leq max (\left | x_{n}-x \right |, \left | z_{n} - x \right |),\forall n\in \mathbb{N} (1)\]
+\[\left | y_{n} - x \right |\leq max (\left | x_{n}-x \right |, \left | z_{n} - x \right |),\forall n\in \mathbb{N} \label{eq:1.1} \tag{1.1}\]
 
 
-Deoarece \(x_{n} \to x, \forall \varepsilon > 0, \exists {n_{\varepsilon }}'\in \mathbb{N}\) astfel \^ inc\^ at pentru \(\forall n \geq {n_{\varepsilon }}'\) este satisfacut\u a inegalitatea \[\left | x_{n}-x \right |< \varepsilon.(2) \]
+Deoarece \(x_{n} \to x, \forall \varepsilon > 0, \exists {n_{\varepsilon }}'\in \mathbb{N}\) astfel \^ inc\^ at pentru \(\forall n \geq {n_{\varepsilon }}'\) este satisfacut\u a inegalitatea \[\left | x_{n}-x \right |< \varepsilon.\label{eq:1.2} \tag{1.2} \]
 	
-Similar din \(z_{n} \to x, \forall \varepsilon > 0,\exists {n_{\varepsilon }}'' \in \mathbb{N}\) astfel \^ inc\^ at pentru \(\forall n\geq {n_{\varepsilon }}''\) este satisfacut\u a inegalitatea \[\left | z_{n} -x \right |< \varepsilon. (3)\]
+Similar din \(z_{n} \to x, \forall \varepsilon > 0,\exists {n_{\varepsilon }}'' \in \mathbb{N}\) astfel \^ inc\^ at pentru \(\forall n\geq {n_{\varepsilon }}''\) este satisfacut\u a inegalitatea \[\left | z_{n} -x \right |< \varepsilon. \label{eq:1.3} \tag{1.3}\]
 
-Fie acum \(\varepsilon > 0.\) Not\u am \(n_{\varepsilon } = max ({n_{\varepsilon }}', {n_{\varepsilon }}'')\). Fie acum \(n\geq n_{\varepsilon }\). Deoarece \(n_{\varepsilon \geq }{n_{\varepsilon }}'\) iar \(n\geq n_{\varepsilon }\) rezult\u a c\u a \(n\geq {n_{\varepsilon }}'\) \c si din (2) rezult\u a c\u a \[\left | x_{n} - x \right |< \varepsilon (4) \]
+Fie acum \(\varepsilon > 0.\) Not\u am \(n_{\varepsilon } = max ({n_{\varepsilon }}', {n_{\varepsilon }}'')\). Fie acum \(n\geq n_{\varepsilon }\). Deoarece \(n_{\varepsilon \geq }{n_{\varepsilon }}'\) iar \(n\geq n_{\varepsilon }\) rezult\u a c\u a \(n\geq {n_{\varepsilon }}'\) \c si din \ref{eq:1.2} rezult\u a c\u a \[\left | x_{n} - x \right |< \varepsilon \label{eq:1.4} \tag{1.4} \]
 	
-Deoarece \(n_{\varepsilon }\geq {n}''_{\varepsilon }\) iar \(n\geq n_{\varepsilon}\) \c si din (3) rezult\u a c\u a  \[\left | z_{n}-x  \right |< \varepsilon (5)\]
+Deoarece \(n_{\varepsilon }\geq {n}''_{\varepsilon }\) iar \(n\geq n_{\varepsilon}\) \c si din \ref{eq:1.3} rezult\u a c\u a  \[\left | z_{n}-x  \right |< \varepsilon \label{eq:1.5} \tag{1.5}\]
 	
-Din (4) \c si (5) rezult\u a c\u a
+Din \ref{eq:1.4} \c si \ref{eq:1.5} rezult\u a c\u a
 
 \[ max(\left | x_{n} -x  \right |, \left | z_{n}-x \right |) = \begin{Bmatrix}
 \left | x_{n}-x daca  \right |\\ 
 \left | z_{n}-x daca  \right |
-\end{Bmatrix} < \varepsilon.  (6) \]
+\end{Bmatrix} < \varepsilon.  \label{eq:1.6} \tag{1.6} \]
 
-Folosind inegalitatea (6) din inegalitatea (1) deducem c\u a \(\left | y_{n}-x  \right |< \varepsilon\).
+Folosind inegalitatea \ref{eq:1.6} din inegalitatea \ref{eq:1.1} deducem c\u a \(\left | y_{n}-x  \right |< \varepsilon\).
  
 A\c sadar am demonstrat : \(\forall \varepsilon > 0, \exists n_{\varepsilon \in \mathbb{N}}\) astfel \^ inc\^ at pentru \(\forall n\geq n_{\varepsilon }\) este satisfacut\u a inegalitatea \(\left | y_{n}-x \right |< \varepsilon.\) 
 
@@ -172,19 +172,19 @@ x_{1},x_{2},x_{3},x_{4},.........,x_{k-1},x_{k},x_{k},x_{k}........
 S\u a not\u am \(k=n_{\frac{1}{2}}\in \mathbb{N}\) \c si s\u a re\c tinem c\u a \c stim c\u a \(\forall n\geq k \) este satisfacut\u a inegalitatea 
 
 \begin{displaymath}
-  \left | x_{n} -x \right |< \frac{1}{2}. (1) 
+  \left | x_{n} -x \right |< \frac{1}{2}. \label{eq:2.1} \tag{2.1} 
 \end{displaymath}
 
 
-Fie \(n\geq k\). Rela\c tia (1) fiind adev\u arat\u a pentru orice num\u ar \(\geq k\) ea va fi adev\u arat\u a \^ in particular pentru k adic\u a avem 
+Fie \(n\geq k\). Rela\c tia \ref{eq:2.1} fiind adev\u arat\u a pentru orice num\u ar \(\geq k\) ea va fi adev\u arat\u a \^ in particular pentru k adic\u a avem 
 \begin{displaymath}
-  \left | x_{k}-x \right |< \frac{1}{2}. (2)
+  \left | x_{k}-x \right |< \frac{1}{2}. \label{eq:2.2} \tag{2.2}
 \end{displaymath}
 
 
-Dar la noi \(n\geq k\) deci din (1) avem \c si 
+Dar la noi \(n\geq k\) deci din \ref{eq:2.1} avem \c si 
 \begin{displaymath}
-  \left | x_{n}-x \right |< \frac{1}{2}.(3)
+  \left | x_{n}-x \right |< \frac{1}{2}.\label{eq:2.3} \tag{2.3}
 \end{displaymath}
 
 
@@ -193,18 +193,18 @@ Avem
   \left | x_{n}-x_{k} \right |= \left | (x_{n}-x)+(x-x_{k}) \right |\leq \left | x_{n}-x \right |+\left | x-x_{k} \right |= 
 \end{displaymath}
 \begin{displaymath}
-  =\left | x_{n}-x \right |+ \left | -(x-x_{k}) \right |= \left | x_{n}-x \right |+ \left | x_{k} -x\right |. (4)
+  =\left | x_{n}-x \right |+ \left | -(x-x_{k}) \right |= \left | x_{n}-x \right |+ \left | x_{k} -x\right |. \label{eq:2.4} \tag{2.4}
 \end{displaymath}
 
 
 
-Am folosit inegalitatea tringhiului \c si \(\left | -a \right |= \left | a \right |\). Folosind (2) \c si (3) din (4) deducem c\u a 
+Am folosit inegalitatea tringhiului \c si \(\left | -a \right |= \left | a \right |\). Folosind \ref{eq:2.2} \c si \ref{eq:2.3} din \ref{eq:2.4} deducem c\u a 
 \begin{displaymath}
-  \left | x_{n}-x_{k} \right |< \frac{1}{2}+ \frac{1}{2}= 1. (5) 
+  \left | x_{n}-x_{k} \right |< \frac{1}{2}+ \frac{1}{2}= 1. \label{eq:2.5} \tag{2.5} 
 \end{displaymath}
 
 
-Dar \(x_{n}, x_{k}\) sunt numere naturale, \c si deci diferen\c ta lor este un num\u ar \^ intreg adic\u a \(x_{n}- x_{k}\in \mathbb{Z}\). Cum \(\left |x_{n}- x_{k} \right |\geq 0\) iar din (5) \(\left |x_{n}- x_{k} \right |< 1\) rezult\u a c\u a \(\left |x_{n}- x_{k} \right |\in \left [ 0,1 \right ]\) deci \(\left |x_{n}- x_{k} \right |\in\mathbb{Z}\cap \left [ 0,1 \right)= \left \{ ....,-n ,....,-2,-1,0,1,2,3,....,n,... \right \}\cap \left [ 0,1 \right )= \left \{ 0 \right \}\) de unde \(\left | x_{n}-x_{k} \right |=0\) adic\u a \(x_{n}-x_{k}=0,x_{n}=x_{k}.\) 
+Dar \(x_{n}, x_{k}\) sunt numere naturale, \c si deci diferen\c ta lor este un num\u ar \^ intreg adic\u a \(x_{n}- x_{k}\in \mathbb{Z}\). Cum \(\left |x_{n}- x_{k} \right |\geq 0\) iar din \ref{eq:2.5} \(\left |x_{n}- x_{k} \right |< 1\) rezult\u a c\u a \(\left |x_{n}- x_{k} \right |\in \left [ 0,1 \right ]\) deci \(\left |x_{n}- x_{k} \right |\in\mathbb{Z}\cap \left [ 0,1 \right)= \left \{ ....,-n ,....,-2,-1,0,1,2,3,....,n,... \right \}\cap \left [ 0,1 \right )= \left \{ 0 \right \}\) de unde \(\left | x_{n}-x_{k} \right |=0\) adic\u a \(x_{n}-x_{k}=0,x_{n}=x_{k}.\) 
 
 A\c sasar am demonstrat: \(\forall n\geq k avem x_{n}=x_{k},\) ceea ce \^ incheie demonstra\c tia. 
 
@@ -240,9 +240,14 @@ Avem
 \end{displaymath}
 
 
-Acum \^ inmul\c tind cu k ob\c tinem \(\frac{k}{\sqrt{n^{4}+1}}\geq \frac{k}{\sqrt{n^{4}+k}}\geq \frac{k}{\sqrt{n^{4}+n}}\). (1) 
+Acum \^ inmul\c tind cu k ob\c tinem 
 
-\^ in continuare \^ in rela\c tia (1) dam lui \(k\) valorile \(1,2,.....,n\). 
+\begin{displaymath}
+  \frac{k}{\sqrt{n^{4}+1}}\geq \frac{k}{\sqrt{n^{4}+k}}\geq \frac{k}{\sqrt{n^{4}+n}} \label{eq:3.1} \tag{3.1} 
+\end{displaymath}
+
+
+\^ in continuare \^ in rela\c tia \ref{eq:3.1} dam lui \(k\) valorile \(1,2,.....,n\). 
 
 Pentru \(k = 1\) rezult\u a:
 
@@ -276,7 +281,7 @@ Sau
 
 Dar \c stim c\u a \(1+2+...+n = \frac{n(n+1)}{2}\), deci vom ob\c tine 
 \begin{displaymath}
-  \frac{n(n+1)}{2\sqrt{n^{4}+1}}\geq x_{n}\geq \frac{n(n+1)}{2\sqrt{n^{4}+n}} (2)
+  \frac{n(n+1)}{2\sqrt{n^{4}+1}}\geq x_{n}\geq \frac{n(n+1)}{2\sqrt{n^{4}+n}} \label{eq:3.2} \tag{3.2}
 \end{displaymath}
 
 Acum 
@@ -285,12 +290,12 @@ Acum
 \end{displaymath}
 \c si 
 \begin{displaymath}
-    \lim_{n \to \infty }\frac{n(n+1)}{2\sqrt{n^{4}+n}}=\frac{1}{2} (3)
+    \lim_{n \to \infty }\frac{n(n+1)}{2\sqrt{n^{4}+n}}=\frac{1}{2} \label{eq:3.3} \tag{3.3}
 \end{displaymath}
 
 Vom da la ambele factor comun for\c tat. 
 
-Din (2) \c si (3) \c si teorema cle\c stelui rezult\u a c\u a:
+Din \ref{eq:3.2} \c si \ref{eq:3.3} \c si teorema cle\c stelui rezult\u a c\u a:
 \begin{displaymath}
   \lim_{n \to \infty }x_{n}=\frac{1}{2}
 \end{displaymath}
@@ -346,10 +351,14 @@ Dac\u a
 
 Atunci \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astefl \^ inc\^ at \(\left | \frac{x_{n}-x_{n-1}}{\alpha _{n}- \alpha _{n-1}} - \alpha \right |< \frac{\varepsilon }{2} \forall  n\geq n_{\varepsilon  }\)
 
-Sau, \(\alpha _{n} \uparrow, 
-\left | x_{n}- x_{n-1 }- \alpha \left ( \alpha _{n}-\alpha _{n-1} \right ) \right | < \frac{\varepsilon }{2}\left ( \alpha _{n}- \alpha _{n-1} \right ), \forall n\geq n_{\varepsilon }\). (1) 
+Sau, 
+\begin{displaymath}
+  \alpha _{n} \uparrow, 
+\left | x_{n}- x_{n-1 }- \alpha \left ( \alpha _{n}-\alpha _{n-1} \right ) \right | < \frac{\varepsilon }{2}\left ( \alpha _{n}- \alpha _{n-1} \right ), \forall n\geq n_{\varepsilon } \label{eq:4.1} \tag{4.1}
+\end{displaymath}
 
-Not\u am cu \(k=n_{\varepsilon }+1\). Pentru \(n\geq k \)lu\^ and \^ in (1), \(n= k+1, k+2,....,n\) ob\c tinem:
+
+Not\u am cu \(k=n_{\varepsilon }+1\). Pentru \(n\geq k \) lu\^ and \^ in  \ref{eq:4.1} , \(n= k+1, k+2,....,n\) ob\c tinem:
 \(\left | x_{k+1} - x_{k} - \alpha \left ( a_{k+1}- a_{k} \right ) \right |< \frac{\varepsilon }{2}\left ( \alpha _{k+1} - \alpha _{k} \right )\). 
 
 \(\left | x_{k+2} - x_{k+1} - \alpha \left ( a_{k+2}- a_{k+1} \right ) \right |< \frac{\varepsilon }{2}\left ( \alpha _{k+2} - \alpha _{k+1} \right )
@@ -759,7 +768,7 @@ Calcula\c ti \begin{displaymath}
 \end{demonstration}
 
 \begin{displaymath}
-  \sum_{k=1}^{n}k\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n}. (1)
+  \sum_{k=1}^{n}k\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n}. \label{eq:5.1} \tag{5.1}
 \end{displaymath}
 
 Fie \(n\geq 2\). Avem \(\ln \left ( n+1 \right )\leq \ln \left ( n+k \right )\leq \ln \left ( n+n \right ), \forall 1\leq k\leq n,\) de unde 
@@ -772,10 +781,13 @@ Fie \(n\geq 2\). Avem \(\ln \left ( n+1 \right )\leq \ln \left ( n+k \right )\le
 \end{displaymath}
 
 \(\frac{\sum_{k=1}^{n}k}{n^{2}}\), sau \^ inc\u a, 
-\(\frac{\ln \left ( n+1 \right )}{\ln n} \cdot \frac{n+1}{2n}\leq \frac{x_{n}}{n\ln n }\leq \frac{\ln \left ( n+n \right )}{\ln n }\cdot \frac{n+1}{2n} (2)\)
+\begin{displaymath}
+  \frac{\ln \left ( n+1 \right )}{\ln n} \cdot \frac{n+1}{2n}\leq \frac{x_{n}}{n\ln n }\leq \frac{\ln \left ( n+n \right )}{\ln n }\cdot \frac{n+1}{2n} \label{eq:5.2} \tag{5.2}
+\end{displaymath}
 
-Din (2) \c si teorema cle\c stelui rezult\u a c\u a \(\lim_{n \to \infty }\frac{x_{n}}{n\ln n } = \frac{1}{2}\). Astfel spus \(x_{n\sim }\frac{n\ln n }{2} (3)\)
-Din (1) \c si (3) rezult\u a c\u a \(\sum_{k=1}^{n}k\left ( \sqrt[n]{n+k}-1 \right )\sim \frac{n\ln n }{2}\), adic\u a egalitatea din enun\c t. 
+
+Din \ref{eq:5.2} \c si teorema cle\c stelui rezult\u a c\u a \(\lim_{n \to \infty }\frac{x_{n}}{n\ln n } = \frac{1}{2}\). Astfel spus \(x_{n\sim }\frac{n\ln n }{2} (3)\)
+Din \ref{eq:5.1} \c si \ref{eq:5.3} rezult\u a c\u a \(\sum_{k=1}^{n}k\left ( \sqrt[n]{n+k}-1 \right )\sim \frac{n\ln n }{2}\), adic\u a egalitatea din enun\c t. 
 
 
 Calcula\c ti 
@@ -789,24 +801,24 @@ Calcula\c ti
 
 \end{demonstration}
 \begin{displaymath}
-  \sum_{k=1}^{n}\frac{1}{k}\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n}. (1)
+  \sum_{k=1}^{n}\frac{1}{k}\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n}. \label{eq:6.1} \tag{6.1}
 \end{displaymath}
 
 Fie \(n\geq 2\). Avem \(\sum_{k=1}^{n}\frac{\ln\left ( n+1 \right )}{k}\leq \sum_{k=1}^{n}\frac{\ln\left ( n+k \right )}{k}\leq \sum_{k=1}^{n}\frac{\ln\left ( n+n \right )}{k}\), de unde 
 
 \(\frac{\ln \left ( n+1 \right )}{n}\sum_{k=1}^{n}\frac{1}{k}\leq x_{n}\leq \frac{\ln \left ( n+n \right )}{n}\sum_{k=1}^{n}\frac{1}{k}\), sau \^ inc\u a, 
 \begin{displaymath}
-  \frac{\ln \left ( n+1 \right )}{\ln n}\cdot \frac{\sum_{k=1}^{n}\frac{1}{k}}{\ln n}\leq \frac{x_{n}}{\frac{\ln^{2}n}{n}}\leq \frac{\ln \left ( n+n \right )}{\ln n}\cdot \frac{\sum_{k=1}^{n}\frac{1}{k}}{\ln n }. (2)
+  \frac{\ln \left ( n+1 \right )}{\ln n}\cdot \frac{\sum_{k=1}^{n}\frac{1}{k}}{\ln n}\leq \frac{x_{n}}{\frac{\ln^{2}n}{n}}\leq \frac{\ln \left ( n+n \right )}{\ln n}\cdot \frac{\sum_{k=1}^{n}\frac{1}{k}}{\ln n }. \label{eq:6.2} \tag{6.2}
 \end{displaymath}
 
-Cum din lema Stolz- Cesaro, cazul \(\left [ \frac{1}{\infty } \right ], \lim_{n \to \infty }\frac{\sum_{k=1}^{n}\frac{1}{k}}{\ln n} = 1\), din (2) \c si teorema cle\c stelui deducem c\u a \(\lim_{n \to \infty }\frac{x_{n}}{\frac{\ln ^{2}n}{n}} = 1\). 
+Cum din lema Stolz- Cesaro, cazul \(\left [ \frac{1}{\infty } \right ], \lim_{n \to \infty }\frac{\sum_{k=1}^{n}\frac{1}{k}}{\ln n} = 1\), din \ref{eq:6.2} \c si teorema cle\c stelui deducem c\u a \(\lim_{n \to \infty }\frac{x_{n}}{\frac{\ln ^{2}n}{n}} = 1\). 
 Altfel spus 
 \begin{displaymath}
-  x_{n}\sim \frac{\ln^{2}n}{n}. (3)
+  x_{n}\sim \frac{\ln^{2}n}{n}. \label{eq:6.3} \tag{6.3}
 \end{displaymath}
 
 
-Din (1) \c si (3) deducem c\u a \(\sum_{k=1}^{n}\frac{1}{k}\left ( \sqrt[n]{n+k}-1 \right )\sim \frac{\ln^{2}n}{n}\), adic\u a egalitatea din enun\c t. 
+Din \ref{eq:6.1} \c si \ref{eq:6.3} deducem c\u a \(\sum_{k=1}^{n}\frac{1}{k}\left ( \sqrt[n]{n+k}-1 \right )\sim \frac{\ln^{2}n}{n}\), adic\u a egalitatea din enun\c t. 
 
 Calcula\c ti 
 \begin{displaymath}
@@ -820,23 +832,23 @@ Calcula\c ti
 
 \end{demonstration}
 \begin{displaymath}
-  \sum_{k=2}^{n}\frac{1}{k\ln k}\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n} . (1)
+  \sum_{k=2}^{n}\frac{1}{k\ln k}\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n} . \label{eq:7.1} \tag{7.1}
 \end{displaymath}
 
 Fie \(n\geq 2\). Avem \(\sum_{k=2}^{n}\frac{\ln \left ( n+1 \right )}{k\ln k}\leq \sum_{k=2}^{n}\frac{\ln \left ( n+k \right )}{k\ln k}\leq \sum_{k=2}^{n}\frac{\ln \left ( n+1 \right )}{k\ln k}\), de unde,
 
 \(\frac{\ln \left ( n+1 \right )}{n}\left ( \sum_{k=2}^{n}\frac{1}{k\ln k } \right )\leq x_{n}\leq \frac{\ln \left ( n+n \right )}{n}\left ( \sum_{k=2}^{n}\frac{1}{k\ln k } \right )\), sau \^ inc\u a, 
 \begin{displaymath}
-  frac{\ln \left ( n+1 \right )}{n}\cdot \frac{\sum_{k=2}^{n}\frac{1}{k\ln k }}{\ln \left ( \ln n \right )}\leq \frac{x_{n}}{\frac{\left ( \ln n \right )\left [ \ln\left ( \ln n \right ) \right ]}{n}}\leq \frac{\ln \left ( n+n \right )}{n}\cdot \frac{\sum_{k=2}^{n}\frac{1}{k\ln k }}{\ln \left ( \ln n \right )}. (2)
+  frac{\ln \left ( n+1 \right )}{n}\cdot \frac{\sum_{k=2}^{n}\frac{1}{k\ln k }}{\ln \left ( \ln n \right )}\leq \frac{x_{n}}{\frac{\left ( \ln n \right )\left [ \ln\left ( \ln n \right ) \right ]}{n}}\leq \frac{\ln \left ( n+n \right )}{n}\cdot \frac{\sum_{k=2}^{n}\frac{1}{k\ln k }}{\ln \left ( \ln n \right )}. \label{eq:7.2} \tag{7.2}
 \end{displaymath}
 
 
-Din lema Stolz-Cesaro , cazul \(\left [ \frac{1}{\infty } \right ], lim_{n \to \infty }\frac{\sum_{k=1}^{n}\frac{1}{k\ln k}}{\ln\left ( \ln n \right ) } = 1,\) din (2) \c si teorema cle\c steluui deducem c\u a \(\lim_{n \to \infty }\frac{x_{n}}{\frac{\left ( \ln n  \right )\left [ \ln\left ( \ln n \right ) \right ]}{n}} = 1\). Altfel spus 
+Din lema Stolz-Cesaro , cazul \(\left [ \frac{1}{\infty } \right ], lim_{n \to \infty }\frac{\sum_{k=1}^{n}\frac{1}{k\ln k}}{\ln\left ( \ln n \right ) } = 1,\) din \ref{eq:7.2} \c si teorema cle\c steluui deducem c\u a \(\lim_{n \to \infty }\frac{x_{n}}{\frac{\left ( \ln n  \right )\left [ \ln\left ( \ln n \right ) \right ]}{n}} = 1\). Altfel spus 
 \begin{displaymath}
-  x_{n}\sim \frac{\left ( \ln n \right )\left [ \ln\left ( \ln n \right ) \right ]}{n}. (3)
+  x_{n}\sim \frac{\left ( \ln n \right )\left [ \ln\left ( \ln n \right ) \right ]}{n}. \label{eq:7.3} \tag{7.3}
 \end{displaymath}
 
-Din (1) \c si (3) deducem c\u a \(\sum_{k=2}^{n}\frac{1}{k}\left ( \sqrt[n]{n+k}-1 \right )\sim \frac{\left ( \ln n \right )\left [ \ln\left ( \ln n \right ) \right ]}{n}\), adic\u a egalitatea din enun\c t. \cite{dumitru}
+Din \ref{eq:7.1} \c si \ref{eq:7.3} deducem c\u a \(\sum_{k=2}^{n}\frac{1}{k}\left ( \sqrt[n]{n+k}-1 \right )\sim \frac{\left ( \ln n \right )\left [ \ln\left ( \ln n \right ) \right ]}{n}\), adic\u a egalitatea din enun\c t. \cite{dumitru}
 
 
 \bibliographystyle{unsrt}

@@ -10,12 +10,13 @@
 \setbeamerfont{fontMy}{size=\small}
 
 \theoremstyle{plain}
-\newtheorem{de}{Definition}[section]
-\newtheorem{lm}[de]{Lemma}
-\newtheorem{re}[de]{Observation}
-\newtheorem{te}[de]{Theorem}
-\newtheorem{ex}[de]{Example}
-\newtheorem{Prop}{Propozition}
+\newtheorem{de}{Defini\c tie}
+\newtheorem{lm}[de]{Lema}
+\newtheorem{re}[de]{Observa\c tie}
+\newtheorem{te}[de]{Teorem\u a }
+\newtheorem{ex}[de]{Exerci\c tii}
+\newtheorem{prop}{Propozi\c tie}
+\newtheorem{dem}{Demonstra\c tie}
 
 \def\be{\begin{equation}}
 \def\ee{\end{equation}}
@@ -95,55 +96,49 @@ Iulie, 2021}\\
 \frame
 {
 \frametitle{\c Siruri}
-
-\begin{definition}
-Fie X o mulțime. O funcție \(f:\mathbb{N} \to X\) se numește șir de elemente din mulțimea X, sau sub o altă formulare: se numește șir de elemente din mulțimea X o funcție \(f:\mathbb{N} \to X\) . În mod uzual, se notează \(f_{1} = x_{1} \in X, f_{2} = x_{2} \in X,......, f_{n} = x_{n} \in X,....\)
-\end{definition}
-
+\begin{de}
+Fie X o mul\c time. O func\c tie \(f:\mathbb{N} \to X\) se numește șir de elemente din mul\c timea X, sau sub o alt\u a formulare: se numește șir de elemente din mul\c timea X o func\c tie \(f:\mathbb{N} \to X\) . \^ in mod uzual, se noteaz\u a \(f_{1} = x_{1} \in X, f_{2} = x_{2} \in X,......, f_{n} = x_{n} \in X,....\)
+\end{de}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame
 {
 \frametitle{\c Siruri convergente de numere reale }
-Teorie
+\textbf{Teorie}
 
 \begin{definition}
 
-Un șir \((x_{n})_{n \in \mathbb{N}} \subset \mathbb{R}\) , se numește convergent dacă există \(x \in \mathbb{R}\) astfel încât:
-	\(\forall _{\varepsilon } > 0, \in n_{\varepsilon } \in \mathbb{N}\) astfel încât este satisfacută inegalitatea:  \(\left | x_{n}- x \right | \leq \varepsilon\) . 
+Un șir \((x_{n})_{n \in \mathbb{N}} \subset \mathbb{R}\) , se numește convergent dac\u a exist\u a \(x \in \mathbb{R}\) astfel \^ inc\^ at:
+	\(\forall _{\varepsilon } > 0, \in n_{\varepsilon } \in \mathbb{N}\) astfel \^ inc\^ at este satisfacut\u a inegalitatea:  \(\left | x_{n}- x \right | \leq \varepsilon\) . 
 	\end{definition}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame
 {
 \frametitle{\c Siruri convergente de numere reale}
-Propoziție
-
+\begin{prop}
 Unicitatea limitei unui șir de numere reale
-
 Fie \((x_{n})_{n \in \mathbb{N}} \subset \mathbb{R}\) . 
-
-Dacă
+Dac\u a
 \begin{displaymath}
   \left\{\begin{matrix}
-x_{n} \to  x\\ 
-x_{n} \to y
-\end{matrix}\right.
-\end{displaymath}
-
-atunci \(x = y\).
-
+    x_{n} \to  x\\ 
+    x_{n} \to y
+    \end{matrix}\right.
+    \end{displaymath}
+    atunci \(x = y\).
+\end{prop}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame
 {
 \frametitle{\c Siruri convergente de numere reale}
-Demonstrație
 
-Să presupunem, prin absurd, că \(x \neq  y\) . Cum suntem pe \(\mathbb{R}\) înseamnă că avem una din situațiile \(x < y\) sau \(y < x\). Pentru a face o alegere, fie \(x < y\) atunci \(y – x > 0\) și din definiție pentru \(\varepsilon = \frac{y- x}{2}  > 0\) rezultă că, 
-\(\exists  n_{1} \in \mathbb{N}\) astfel încât \(\left | x_{n} - x  \right | < \frac{y - x }{2} , \forall n \geq n_{1} \)
+\begin{dem}
+S\u a presupunem, prin absurd, c\u a \(x \neq  y\) . Cum suntem pe \(\mathbb{R}\) \^ inseamn\u a c\u a avem una din situa\c tiile \(x < y\) sau \(y < x\). Pentru a face o alegere, fie \(x < y\) atunci \(y – x > 0\) și din defini\c tie pentru \(\varepsilon = \frac{y- x}{2}  > 0\) rezult\u a c\u a, 
+\(\exists  n_{1} \in \mathbb{N}\) astfel \^ inc\^ at \(\left | x_{n} - x  \right | < \frac{y - x }{2} , \forall n \geq n_{1} \)
 și 
-\(\exists  n_{2} \in \mathbb{N}\) astfel încât \(\left | x_{n} - y  \right | < \frac{y - x }{2} , \forall n \geq n_{2}\) 
+\(\exists  n_{2} \in \mathbb{N}\) astfel \^ inc\^ at \(\left | x_{n} - y  \right | < \frac{y - x }{2} , \forall n \geq n_{2}\) 
 Fie \(n = max (n _{1}, n_{2}) \geq n_{1}, n_{2}.\) Atunci: 
 \(\left | x_{n} - x \right | < \frac{y-x}{2}\) și \(\left | x_{n} - y  \right | <  \frac{y-x}{2}\)
 de unde 
@@ -151,26 +146,28 @@ de unde
   y-x = \left | y-x \right | = \left | (y-x_{n})+ (x_{n} -x) \right |\leq \left | y-x_{n} \right | + \left | x_{n} - x \right | < \frac{y-x}{2} + \frac{y-x}{2} = y-x
 \end{displaymath}
 
-	Așadar, \(y-x < y-x\) , contradicție!
+	Așadar, \(y-x < y-x\) , contradic\c tie!
+\end{dem}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame
 {
 \frametitle{\c Siruri convergente de numere reale}
-Exerciții
 
-Calculați 
+\begin{ex}
+Calcula\c ti 
 
 \begin{displaymath}
   \lim_{n\to\infty }\left ( \frac{1}{\sqrt{n^{4}+1}}+ \frac{2}{\sqrt{n^{4}+2} } +\frac{3}{\sqrt{n^{4}+3}}+........+\frac{n}{\sqrt{n^{4}+n}}  \right )
 \end{displaymath}
 Rezolvare
 
-Notăm \(x_{n}= \frac{1}{\sqrt{n^{4}+1}} + \frac{2}{\sqrt{n^{4}+2}}+\frac{3}{\sqrt{n^{4}+3}}+........+\frac{n}{\sqrt{n^{4}+n}}\).
-\\ Adică \(x_{n}= \sum_{k=1}^{n}\frac{k}{n^{4}+k}\).
+Not\u am \(x_{n}= \frac{1}{\sqrt{n^{4}+1}} + \frac{2}{\sqrt{n^{4}+2}}+\frac{3}{\sqrt{n^{4}+3}}+........+\frac{n}{\sqrt{n^{4}+n}}\).
+\\ Adic\u a \(x_{n}= \sum_{k=1}^{n}\frac{k}{n^{4}+k}\).
 
-În continuare procedăm astfel. De numărător nu ne atingem. Vom lucra cu numitorul, ideea fiind de a se avea același numitor peste tot. 
+\^ in continuare proced\u am astfel. De num\u ar\u ator nu ne atingem. Vom lucra cu numitorul, ideea fiind de a se avea același numitor peste tot. 
 \\ Avem \(1\leq k\leq n\) de unde \(n^{4}+1 \leq n^{4}+k \leq n^{4}+n\) de unde\\  \(\sqrt{n^{4}+1}\leq \sqrt{n^{4}+k}\leq \sqrt{n^{4}+1}\) de unde \\ \(\frac{1}{\sqrt{n^{4}+1}}\geq \frac{1}{\sqrt{n^{4}+k}}\geq \frac{1}{\sqrt{n^{4}+n}}\).
+\end{ex}
 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -179,16 +176,16 @@ Notăm \(x_{n}= \frac{1}{\sqrt{n^{4}+1}} + \frac{2}{\sqrt{n^{4}+2}}+\frac{3}{\sq
 \frametitle{\c Siruri convergente de numere reale}
 
 
-Acum înmulțind cu k obținem 
+Acum \^ inmul\c tind cu k ob\c tinem 
 \begin{displaymath}
 \frac{k}{\sqrt{n^{4}+1}}\geq \frac{k}{\sqrt{n^{4}+k}}\geq \frac{k}{\sqrt{n^{4}+n}} \label{eq:1.1} \tag{1.1}
 \end{displaymath}
-\\ În continuare în relația \ref{eq:1.1} dam lui k valorile \(1,2,.....,n\). 
-\\Pentru \( k = 1\) rezultă
+\\ \^ in continuare \^ in rela\c tia \ref{eq:1.1} dam lui k valorile \(1,2,.....,n\). 
+\\Pentru \( k = 1\) rezult\u a
 \(\frac{1}{\sqrt{n^{4}+1}}\geq \frac{1}{\sqrt{n^{4}+1}}\geq \frac{1}{\sqrt{n^{4}+n}}\)
-\\ Pentru \( k = 2\) rezultă
+\\ Pentru \( k = 2\) rezult\u a
  \(\frac{2}{\sqrt{n^{4}+1}}\geq \frac{2}{\sqrt{n^{4}+2}}\geq \frac{2}{\sqrt{n^{4}+n}}\)
-\\ Adunând inegalitățile de mai sus obținem 
+\\ Adun\^ and inegalit\u a\c tile de mai sus ob\c tinem 
 
 \begin{displaymath}
  \frac{1}{\sqrt{n^{4}+1}}+ \frac{2}{\sqrt{n^{4}+1}}+......+ \frac{n}{\sqrt{n^{4}+1}} \geq 
@@ -208,13 +205,13 @@ Acum înmulțind cu k obținem
 {
 \frametitle{\c Siruri convergente de numere reale}
 Sau \(\frac{1+2+....+n}{\sqrt{n^{4}+1}}\geq x_{n}\geq \frac{1+2+.....+n}{\sqrt{n^{4}+n}}\)
- \\ Dar știm că \(1+2+...+n = \frac{n(n+1)}{2}\), 
- deci vom obține \(\frac{n(n+1)}{2\sqrt{n^{4}+1}}\geq x_{n}\geq \frac{n(n+1)}{2\sqrt{n^{4}+n}}\). (2)
+ \\ Dar știm c\u a \(1+2+...+n = \frac{n(n+1)}{2}\), 
+ deci vom ob\c tine \(\frac{n(n+1)}{2\sqrt{n^{4}+1}}\geq x_{n}\geq \frac{n(n+1)}{2\sqrt{n^{4}+n}}\). (2)
 \\ Acum 
 \begin{displaymath}
  \lim_{n \to \infty }\frac{n(n+1)}{2\sqrt{n^{4}+1}}=\frac{1}{2} și \lim_{n \to \infty }\frac{n(n+1)}{2\sqrt{n^{4}+n}}=\frac{1}{2}. (3)
 \end{displaymath}
-\\ Vom da la ambele factor comun forțat. Din (2) și (3) și teorema cleștelui rezultă că
+\\ Vom da la ambele factor comun for\c tat. Din (2) și (3) și teorema cleștelui rezult\u a c\u a
 \begin{displaymath}
  \lim_{n \to \infty }x_{n}=\frac{1}{2}
 \end{displaymath}
@@ -224,25 +221,25 @@ Sau \(\frac{1+2+....+n}{\sqrt{n^{4}+1}}\geq x_{n}\geq \frac{1+2+.....+n}{\sqrt{n
 {
 \frametitle{\c Siruri m\u arginite}
 Teorie 
-\\ Definiție 
+\\ Defini\c tie 
 \\ Fie \((x_{n})_{n\in \mathbb{N}}\) un șir de numere reale. 
-\\ Șirul \((x_{n})_{n\in \mathbb{N}}\) se numește mărginit dacă și numai dacă \(\exists  a, b \in \mathbb{R}\), a< b astfel încât \(\forall n\in \mathbb{N}\) este satisfacută inegalitatea \(x_{n}\in \left [ a,b \right ]\), sau echivalent \(\exists M> 0\) astefle încât \(\forall  n\in \mathbb{N}\) este satisfacută inegalitatea \(\left | x_{n} \right |\leq M\).
-\\ Definiție 
-\\ Fie \((x_{n})_{n\in \mathbb{N}}\) un șir de numere reale. Spunem că \(\lim_{n \to \infty }x_{n}=\infty\) dacă, \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astfel încât pentru \(\forall n\geq n_{\varepsilon }\) este satisfacută inegalitatea \(x_{n}> \varepsilon\). 
-\\Sau \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astfel încât \(x_{n}> \varepsilon ,\forall n\geq n_{\varepsilon }\). 
+\\ Șirul \((x_{n})_{n\in \mathbb{N}}\) se numește m\u arginit dac\u a și numai dac\u a \(\exists  a, b \in \mathbb{R}\), a< b astfel \^ inc\^ at \(\forall n\in \mathbb{N}\) este satisfacut\u a inegalitatea \(x_{n}\in \left [ a,b \right ]\), sau echivalent \(\exists M> 0\) astefle \^ inc\^ at \(\forall  n\in \mathbb{N}\) este satisfacut\u a inegalitatea \(\left | x_{n} \right |\leq M\).
+\\ Defini\c tie 
+\\ Fie \((x_{n})_{n\in \mathbb{N}}\) un șir de numere reale. Spunem c\u a \(\lim_{n \to \infty }x_{n}=\infty\) dac\u a, \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astfel \^ inc\^ at pentru \(\forall n\geq n_{\varepsilon }\) este satisfacut\u a inegalitatea \(x_{n}> \varepsilon\). 
+\\Sau \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astfel \^ inc\^ at \(x_{n}> \varepsilon ,\forall n\geq n_{\varepsilon }\). 
 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame
 {
 \frametitle{\c Siruri m\u arginite}
-Exerciții
-\\ Calculați
-\\ Fie \(\alpha > 0\) să se calculeze 
+Exerci\c tii
+\\ Calcula\c ti
+\\ Fie \(\alpha > 0\) s\u a se calculeze 
 \begin{displaymath}
  \lim_{n \to \infty }\frac{1^{\alpha }+2^{\alpha }+....+n^{\alpha }}{n^{\alpha +1}}
 \end{displaymath}
-\\ Demonstrație 
+\\ Demonstra\c tie 
 \\ Fie \(x_{n}=1^{\alpha }+2^{\alpha }+....+n^{\alpha },a_{n}= n^{\alpha }\).  Deoarece \(\alpha > 0 , \alpha \uparrow \infty\). 
 \\ Din lema Stolz-Cesaro, cazul \(\left [ \frac{1}{\infty } \right ]\), 
 \begin{displaymath}
@@ -260,7 +257,7 @@ Exerciții
 \begin{displaymath}
  \lim_{n \to \infty }\frac{\left ( n+1 \right )^{\alpha +1}-n^{\alpha +1}}{\left ( n+1 \right )^{\alpha }}
 \end{displaymath}
-\\ Dăm factor comun forțat la numărător pe \(n^{\alpha +1}\). 
+\\ D\u am factor comun for\c tat la num\u ar\u ator pe \(n^{\alpha +1}\). 
 \\ Avem 
 \begin{displaymath}
  \lim_{n \to \infty }\frac{\left ( n+1 \right )^{\alpha +1}-n^{\alpha +1}}{\left ( n+1 \right )^{\alpha }} = \lim_{n \to \infty }\frac{n^{\alpha +1\left [ \frac{\left ( n+1 \right )^{\alpha +1}}{n^{\alpha +1}} -1\right ]}}{\left ( n+1 \right )^{\alpha }} = 
@@ -285,11 +282,11 @@ Exerciții
 \begin{displaymath}
  =\lim_{n \to \infty }\frac{\left ( 1+n \right )^{\alpha +1}-1}{n}= \alpha +1=
 \end{displaymath}
-\\ Am folosit limita fundamentală 
+\\ Am folosit limita fundamental\u a 
 \begin{displaymath}
  \lim_{x \to \infty }\frac{\left ( 1+x \right )^{\gamma }-1}{x} = \gamma ,\gamma \in \mathbb{R}
 \end{displaymath}
-\\ Întorcându-ne la problemă, obținem:
+\\ \^ intorc\^ andu-ne la problem\u a, ob\c tinem:
 \begin{displaymath}
  \lim_{n \to \infty }\frac{1^{\alpha }+2^{\alpha }+....+n^{\alpha }}{n^{\alpha +1}} = \frac{1}{\alpha +1}
 \end{displaymath}
@@ -299,20 +296,20 @@ Exerciții
 {
 \frametitle{\c Siruri recurente \c si asimtote oblice}
 Teorie
-\\ Teoremă
-\\ Fie \(a\in \mathbb{R}\) și \(f: \left ( \alpha ,\infty  \right )n \to \mathbb{R}\) o funcție continuă cu proprietatea că \(f_{(x)}> x, \forall x > a\). Definim șirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condiția inițială \(x_{1}> \alpha\) și relația de recurență \(x_{n+1} = f_{\left ( x_{n} \right )} pentru orice  n\geq 1\).
+\\ Teorem\u a
+\\ Fie \(a\in \mathbb{R}\) și \(f: \left ( \alpha ,\infty  \right )n \to \mathbb{R}\) o func\c tie continu\u a cu proprietatea c\u a \(f_{(x)}> x, \forall x > a\). Definim șirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c tia ini\c tial\u a \(x_{1}> \alpha\) și rela\c tia de recuren\c t\u a \(x_{n+1} = f_{\left ( x_{n} \right )} pentru orice  n\geq 1\).
 \\ Atunci 
 \begin{displaymath}
  \lim_{x \to \infty }x_{n} = \infty
 \end{displaymath}
-\\ Dacă există \(b_{0}\in \mathbb{R}\) astfel încât \(y = x + b_{0}\) este asimtotă oblică la graficul funcției f, atunci
+\\ Dac\u a exist\u a \(b_{0}\in \mathbb{R}\) astfel \^ inc\^ at \(y = x + b_{0}\) este asimtot\u a oblic\u a la graficul func\c tiei f, atunci
 \(\lim_{x \to \infty }\frac{x_{n}}{n}=b_{0}\)
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame
 {
 \frametitle{\c Siruri recurente \c si asimtote oblice}
-Dacă există \(b_{0}, b_{1}\in \mathbb{R}, b_{0 }\neq 0\) astfel încât 
+Dac\u a exist\u a \(b_{0}, b_{1}\in \mathbb{R}, b_{0 }\neq 0\) astfel \^ inc\^ at 
 \(\lim_{n \to \infty }x\left ( f\left ( x \right )-x-b_{0} \right )= b_{1},
 \lim_{n \to \infty } \frac{n}{\ln n}\left ( \frac{x_{n}}{n} -b_{0}\right )=\frac{b_{1}}{b_{0}}\)
 
@@ -321,13 +318,13 @@ Dacă există \(b_{0}, b_{1}\in \mathbb{R}, b_{0 }\neq 0\) astfel încât
 \frame
 {
 \frametitle{\c Siruri recurente \c si asimtote oblice}
-Exerciții
-\\ Calculați
+Exerci\c tii
+\\ Calcula\c ti
 \begin{displaymath}
  \lim_{n \to \infty }\frac{\sum_{k=1}^{n}k\left ( \sqrt[n]{n+k} -1\right )}{n\ln n } = \frac{1}{2}
 \end{displaymath}
-\\ Demonstrație 
-\\ Să notăm \(x_{n} = \frac{1}{n}\sum_{k=1}^{n} k \ln \left ( n+k \right ), n \geq 1\). 
+\\ Demonstra\c tie 
+\\ S\u a not\u am \(x_{n} = \frac{1}{n}\sum_{k=1}^{n} k \ln \left ( n+k \right ), n \geq 1\). 
 \begin{displaymath}
  \sum_{k=1}^{n}k\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n}. \label{eq:2.1} \tag{2.1}
 \end{displaymath}
@@ -347,7 +344,7 @@ Fie \(n\geq 2\).
 \begin{displaymath}
  \frac{\sum_{k=1}^{n}k}{n^{2}},
 \end{displaymath}
- sau încă
+ sau \^ inc\u a
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame
@@ -356,13 +353,13 @@ Fie \(n\geq 2\).
 \begin{displaymath}
  \frac{\ln \left ( n+1 \right )}{\ln n} \cdot \frac{n+1}{2n}\leq \frac{x_{n}}{n\ln n }\leq \frac{\ln \left ( n+n \right )}{\ln n }\cdot \frac{n+1}{2n} \label{eq:2.2} \tag{2.2}
 \end{displaymath}
-\\ Din relația \ref{eq:2.2} și teorema cleștelui rezultă că \(\lim_{n \to \infty }\frac{x_{n}}{n\ln n } = \frac{1}{2}\). Astfel spus 
+\\ Din rela\c tia \ref{eq:2.2} și teorema cleștelui rezult\u a c\u a \(\lim_{n \to \infty }\frac{x_{n}}{n\ln n } = \frac{1}{2}\). Astfel spus 
 
 \begin{displaymath}
 x_{n\sim }\frac{n\ln n }{2} \label{eq:2.3} \tag{2.3}
 \end{displaymath}
 
-Din relațiile \ref{eq:2.1} și \ref{eq:2.3} rezultă că \(\sum_{k=1}^{n}k\left ( \sqrt[n]{n+k}-1 \right )\sim \frac{n\ln n }{2}\), adică egalitatea din enunț. 
+Din rela\c tiile \ref{eq:2.1} și \ref{eq:2.3} rezult\u a c\u a \(\sum_{k=1}^{n}k\left ( \sqrt[n]{n+k}-1 \right )\sim \frac{n\ln n }{2}\), adic\u a egalitatea din enun\c t. 
 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -370,7 +367,7 @@ Din relațiile \ref{eq:2.1} și \ref{eq:2.3} rezultă că \(\sum_{k=1}^{n}k\left
 {
 \frametitle{Bibliografie}
 \begin{itemize}
-\item[(1)] Popa,Dumitru, Curs Matematică didactică – Analiză – Capitole speciale de analiză matematică pentru pregătirea profesorilor , 2020-2021
+\item[(1)] Popa,Dumitru, Curs Matematic\u a didactic\u a – Analiz\u a – Capitole speciale de analiz\u a matematic\u a pentru preg\u atirea profesorilor , 2020-2021
 \end{itemize}
 }
 \frame

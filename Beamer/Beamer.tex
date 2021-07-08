@@ -205,13 +205,19 @@ Acum \^ inmul\c tind cu k ob\c tinem
 {
 \frametitle{\c Siruri convergente de numere reale}
 Sau \(\frac{1+2+....+n}{\sqrt{n^{4}+1}}\geq x_{n}\geq \frac{1+2+.....+n}{\sqrt{n^{4}+n}}\)
- \\ Dar știm c\u a \(1+2+...+n = \frac{n(n+1)}{2}\), 
- deci vom ob\c tine \(\frac{n(n+1)}{2\sqrt{n^{4}+1}}\geq x_{n}\geq \frac{n(n+1)}{2\sqrt{n^{4}+n}}\). (2)
-\\ Acum 
+Dar știm c\u a \(1+2+...+n = \frac{n(n+1)}{2}\), 
+deci vom ob\c tine 
+
 \begin{displaymath}
- \lim_{n \to \infty }\frac{n(n+1)}{2\sqrt{n^{4}+1}}=\frac{1}{2} și \lim_{n \to \infty }\frac{n(n+1)}{2\sqrt{n^{4}+n}}=\frac{1}{2}. (3)
+  \frac{n(n+1)}{2\sqrt{n^{4}+1}}\geq x_{n}\geq \frac{n(n+1)}{2\sqrt{n^{4}+n}} \label{eq:1.2} \tag{1.2}
 \end{displaymath}
-\\ Vom da la ambele factor comun for\c tat. Din (2) și (3) și teorema cleștelui rezult\u a c\u a
+
+Acum 
+
+\begin{displaymath}
+ \lim_{n \to \infty }\frac{n(n+1)}{2\sqrt{n^{4}+1}}=\frac{1}{2} și \lim_{n \to \infty }\frac{n(n+1)}{2\sqrt{n^{4}+n}}=\frac{1}{2} \label{eq:1.3} \tag{1.3}
+\end{displaymath}
+Vom da la ambele factor comun for\c tat. Din \ref{eq:1.2} și \ref{eq:1.3} și teorema cleștelui rezult\u a c\u a
 \begin{displaymath}
  \lim_{n \to \infty }x_{n}=\frac{1}{2}
 \end{displaymath}
@@ -220,21 +226,23 @@ Sau \(\frac{1+2+....+n}{\sqrt{n^{4}+1}}\geq x_{n}\geq \frac{1+2+.....+n}{\sqrt{n
 \frame
 {
 \frametitle{\c Siruri m\u arginite}
-Teorie 
-\\ Defini\c tie 
-\\ Fie \((x_{n})_{n\in \mathbb{N}}\) un șir de numere reale. 
-\\ Șirul \((x_{n})_{n\in \mathbb{N}}\) se numește m\u arginit dac\u a și numai dac\u a \(\exists  a, b \in \mathbb{R}\), a< b astfel \^ inc\^ at \(\forall n\in \mathbb{N}\) este satisfacut\u a inegalitatea \(x_{n}\in \left [ a,b \right ]\), sau echivalent \(\exists M> 0\) astefle \^ inc\^ at \(\forall  n\in \mathbb{N}\) este satisfacut\u a inegalitatea \(\left | x_{n} \right |\leq M\).
-\\ Defini\c tie 
-\\ Fie \((x_{n})_{n\in \mathbb{N}}\) un șir de numere reale. Spunem c\u a \(\lim_{n \to \infty }x_{n}=\infty\) dac\u a, \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astfel \^ inc\^ at pentru \(\forall n\geq n_{\varepsilon }\) este satisfacut\u a inegalitatea \(x_{n}> \varepsilon\). 
-\\Sau \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astfel \^ inc\^ at \(x_{n}> \varepsilon ,\forall n\geq n_{\varepsilon }\). 
+\textbf{Teorie }
 
+\begin{de}
+Fie \((x_{n})_{n\in \mathbb{N}}\) un șir de numere reale. 
+Șirul \((x_{n})_{n\in \mathbb{N}}\) se numește m\u arginit dac\u a și numai dac\u a \(\exists  a, b \in \mathbb{R}\), a< b astfel \^ inc\^ at \(\forall n\in \mathbb{N}\) este satisfacut\u a inegalitatea \(x_{n}\in \left [ a,b \right ]\), sau echivalent \(\exists M> 0\) astefle \^ inc\^ at \(\forall  n\in \mathbb{N}\) este satisfacut\u a inegalitatea \(\left | x_{n} \right |\leq M\).
+\end{de}
+\begin{de}
+Fie \((x_{n})_{n\in \mathbb{N}}\) un șir de numere reale. Spunem c\u a \(\lim_{n \to \infty }x_{n}=\infty\) dac\u a, \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astfel \^ inc\^ at pentru \(\forall n\geq n_{\varepsilon }\) este satisfacut\u a inegalitatea \(x_{n}> \varepsilon\). 
+\\Sau \(\forall \varepsilon > 0,\exists n_{\varepsilon }\in \mathbb{N}\) astfel \^ inc\^ at \(x_{n}> \varepsilon ,\forall n\geq n_{\varepsilon }\). 
+\end{de}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame
 {
 \frametitle{\c Siruri m\u arginite}
-Exerci\c tii
-\\ Calcula\c ti
+\begin{ex}
+Calcula\c ti
 \\ Fie \(\alpha > 0\) s\u a se calculeze 
 \begin{displaymath}
  \lim_{n \to \infty }\frac{1^{\alpha }+2^{\alpha }+....+n^{\alpha }}{n^{\alpha +1}}
@@ -249,6 +257,7 @@ Exerci\c tii
 \begin{displaymath}
  =\lim_{n \to \infty } \frac{\left ( n+1 \right )^{\alpha }}{\left ( n+1 \right )^{\alpha+1} -n^{\alpha +1}}
 \end{displaymath}
+\end{ex}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame
@@ -295,15 +304,16 @@ Exerci\c tii
 \frame
 {
 \frametitle{\c Siruri recurente \c si asimtote oblice}
-Teorie
-\\ Teorem\u a
-\\ Fie \(a\in \mathbb{R}\) și \(f: \left ( \alpha ,\infty  \right )n \to \mathbb{R}\) o func\c tie continu\u a cu proprietatea c\u a \(f_{(x)}> x, \forall x > a\). Definim șirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c tia ini\c tial\u a \(x_{1}> \alpha\) și rela\c tia de recuren\c t\u a \(x_{n+1} = f_{\left ( x_{n} \right )} pentru orice  n\geq 1\).
+\textbf{Teorie}
+\begin{te}
+Fie \(a\in \mathbb{R}\) și \(f: \left ( \alpha ,\infty  \right )n \to \mathbb{R}\) o func\c tie continu\u a cu proprietatea c\u a \(f_{(x)}> x, \forall x > a\). Definim șirul de numere reale \(\left ( x_{n} \right )_{n\geq 1}\) prin condi\c tia ini\c tial\u a \(x_{1}> \alpha\) și rela\c tia de recuren\c t\u a \(x_{n+1} = f_{\left ( x_{n} \right )} pentru orice  n\geq 1\).
 \\ Atunci 
 \begin{displaymath}
  \lim_{x \to \infty }x_{n} = \infty
 \end{displaymath}
 \\ Dac\u a exist\u a \(b_{0}\in \mathbb{R}\) astfel \^ inc\^ at \(y = x + b_{0}\) este asimtot\u a oblic\u a la graficul func\c tiei f, atunci
 \(\lim_{x \to \infty }\frac{x_{n}}{n}=b_{0}\)
+\end{te}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame
@@ -318,8 +328,8 @@ Dac\u a exist\u a \(b_{0}, b_{1}\in \mathbb{R}, b_{0 }\neq 0\) astfel \^ inc\^ a
 \frame
 {
 \frametitle{\c Siruri recurente \c si asimtote oblice}
-Exerci\c tii
-\\ Calcula\c ti
+\begin{ex}
+Calcula\c ti
 \begin{displaymath}
  \lim_{n \to \infty }\frac{\sum_{k=1}^{n}k\left ( \sqrt[n]{n+k} -1\right )}{n\ln n } = \frac{1}{2}
 \end{displaymath}
@@ -328,6 +338,7 @@ Exerci\c tii
 \begin{displaymath}
  \sum_{k=1}^{n}k\left ( \sqrt[n]{n+k}-1 \right )\sim x_{n}. \label{eq:2.1} \tag{2.1}
 \end{displaymath}
+\end{ex}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame
@@ -353,7 +364,7 @@ Fie \(n\geq 2\).
 \begin{displaymath}
  \frac{\ln \left ( n+1 \right )}{\ln n} \cdot \frac{n+1}{2n}\leq \frac{x_{n}}{n\ln n }\leq \frac{\ln \left ( n+n \right )}{\ln n }\cdot \frac{n+1}{2n} \label{eq:2.2} \tag{2.2}
 \end{displaymath}
-\\ Din rela\c tia \ref{eq:2.2} și teorema cleștelui rezult\u a c\u a \(\lim_{n \to \infty }\frac{x_{n}}{n\ln n } = \frac{1}{2}\). Astfel spus 
+Din rela\c tia \ref{eq:2.2} și teorema cleștelui rezult\u a c\u a \(\lim_{n \to \infty }\frac{x_{n}}{n\ln n } = \frac{1}{2}\). Astfel spus 
 
 \begin{displaymath}
 x_{n\sim }\frac{n\ln n }{2} \label{eq:2.3} \tag{2.3}
